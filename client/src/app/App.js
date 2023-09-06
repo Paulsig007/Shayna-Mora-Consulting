@@ -14,7 +14,7 @@ import Nav from '../components/nav/Nav';
 function App() {
   return (
     <Router>
-    <Container maxWidth="sm">
+    <Container maxWidth="xlg">
     <div className="App">
       <Nav />
       {/* <Routes> */}
