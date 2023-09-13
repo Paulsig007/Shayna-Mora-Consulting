@@ -1,0 +1,56 @@
+@import "../../styles/COLORS.css"; 
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap');
+
+.Box{
+    width: 100%;
+    display: flex;
+    margin: 0;
+}
+.nav{
+    font-family: 'Urbanist', sans-serif;
+    background-color: var(--light-teal);
+}
+
+.logo{
+    max-width: 100%;
+    padding-top: 5%;
+    padding: 2%;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+}
+
+.link{
+    text-decoration: none;
+    color: var(--dark-blue);
+    padding: 2%;
+    padding-right: 1.5%;
+}
+
+.link:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    .Box{
+        flex-direction: column;
+    }
+    .logo{
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .links{
+        justify-content: space-between;
+        font-size: 4vw;
+
+        padding: 0;
+    }
+    
+}
+

@@ -1,0 +1,73 @@
+@import "../../styles/COLORS.css";
+
+*{
+    font-family: 'Urbanist', sans-serif;
+}
+
+.card{
+    width: 100%;
+    height:100%;
+    background-color: var(--light-teal);
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover{
+    background-color: var(--dark-teal);
+    transform: scale(1.05);
+    /* color: var(--light-teal); */
+}
+
+.cardTitleContainer{
+    width: 100%;
+    height: 50%;
+    padding-bottom: 2%;
+    border-radius: 5px 5px 0 0;
+    background-color: var(--dark-teal);
+}
+
+.cardTitle{
+    font-size: 2.4vw;
+    font-weight: 700;
+    text-align: center;
+    padding: 2%;
+    margin: 0;
+    margin-top: 2%;
+}
+
+.cardTextContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+}
+
+.cardText{
+    font-size: 1.5vw;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+    .cardTitle{
+        font-size: 4vw;
+    }
+    .cardText{
+        font-size: 3vw;
+    }
+}
+
+
+

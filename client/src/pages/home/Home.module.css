@@ -1,0 +1,91 @@
+@import '../../styles/COLORS.css';
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Urbanist:wght@700&display=swap');
+
+
+.home {
+    display: flex;
+    background-color: var(--grey);
+}
+
+.headshotContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headshot{
+    width: 46%;
+    border-radius: 50%;
+    /* padding-left: 10%; */
+    margin-top: 10%;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    width: 50%;
+}
+
+/* .title{
+    font-size: 3vw;
+    font-weight: bold;
+    color: var(--dark-blue);
+    margin: 0;
+} */
+
+.text{
+    font-family: 'Mate SC', serif;
+    font-weight: bold;
+    font-size: 2.7vw;
+    color: var(--dark-blue);
+    margin: 0;
+    padding-left: 5%;
+    text-align: left;
+    width: 80%;
+}
+
+.serviceCardContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100%;
+    padding: 5%;
+}
+
+@media screen and (max-width: 600px) {
+    .home {
+        flex-direction: column;
+    }
+    .headshotContainer {
+        width: 100%;
+    }
+    .headshot{
+        order: 1;
+        width: 50%;
+        margin: 5%;
+    }
+    .textContainer {
+        width: 100%;
+        align-items: center;
+    }
+    .text{
+        font-size: 4.1vw;
+        width: 100%;
+        text-align: center;
+        padding-left: 7%;
+        padding-right: 7%;
+        padding-bottom: 5%;
+    }
+    
+    .serviceCardContainer{
+        flex-direction: column;
+        align-items: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+    
+
+

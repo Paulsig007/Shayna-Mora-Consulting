@@ -10,10 +10,10 @@ function Nav() {
     return (
         <Box className={styles.Box}>
         <Grid container className={styles.nav}>
-        <Grid item xs={12} sm={5}  >
+        <Grid item xs={12} sm={6}  >
             <img src={Logo} alt="Mora Consulting Logo" className={styles.logo} />
         </Grid>
-        <Grid item xs={12} sm={7}  className={styles.links}>
+        <Grid item xs={12} sm={6}  className={styles.links}>
             <Link to="/" className={styles.link}>HOME</Link>
             <Link to="/about" className={styles.link}>ABOUT</Link>
             <Link to="/services" className={styles.link}>SERVICES</Link>
