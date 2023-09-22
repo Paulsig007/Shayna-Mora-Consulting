@@ -11,6 +11,21 @@
     background-color: var(--light-teal);
 }
 
+.servicesButton {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 100%;
+    text-decoration: none;
+    color: var(--dark-blue);
+    padding: 2%;
+    padding-right: 1.5%;
+    text-shadow: 1.5px 1.5px black;
+}
+
+.servicesButton:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
 .logo{
     max-width: 100%;
     padding-top: 5%;
@@ -29,11 +44,17 @@
     color: var(--dark-blue);
     padding: 2%;
     padding-right: 1.5%;
+    text-shadow: 1.5px 1.5px black;
 }
 
 .link:hover{
     color: rgb(0, 0, 0);
     text-decoration: underline;
+}
+
+.menuLink{
+    text-decoration: none;
+    color: var(--dark-blue);
 }
 
 @media screen and (max-width: 600px) {
