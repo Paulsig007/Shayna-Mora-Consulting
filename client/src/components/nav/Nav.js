@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Nav.module.css";
-import Logo from "../../assets/images/mora-consulting-logo1.png";
+import Logo from "../../assets/images/moraImages/mora-consulting-logo.png";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
@@ -34,7 +34,7 @@ function Nav() {
               <Link to="/about" className={styles.link}>ABOUT</Link>
               <div className={styles.dropdown}>
               <Button 
-                className={styles.serviceButton}
+                className={styles.menuButton}
                 aria-controls="basic-menu"
                 aria-haspopup="true"
                 aria-expanded={open ? 'true' : undefined}
@@ -46,7 +46,7 @@ function Nav() {
               open={open}
               onClose={handleClose}
               MenuListProps={{
-                'aria-labelledby': 'basic-serviceButton',
+                'aria-labelledby': 'basic-menuButton',
               }}
               >
                 {data.map((data) => (

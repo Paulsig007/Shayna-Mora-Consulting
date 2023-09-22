@@ -9,7 +9,7 @@
 }
 
 .homeBanner{
-    background: url("../../assets/images/frond-background.jpg");
+    background: url("../../assets/images/backgroundImages/frond-background.jpg");
     background-size: cover;
     background-position-y: 40%;
     padding-bottom: 3%;

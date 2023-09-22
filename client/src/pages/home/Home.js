@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Home.module.css";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
-import headshot from "../../assets/images/Headshot.png";
+import headshot from "../../assets/images/moraImages/Headshot.png";
 import ServiceCard from "../../components/serviceCard/ServiceCard";
 import serviceData from "../../assets/serviceData";
 import ServiceDescription from "../../components/serviceDescription/ServiceDescription";
