@@ -11,6 +11,7 @@ import data from "../../assets/serviceData"
 
 
 
+
 function Nav() {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
@@ -32,9 +33,22 @@ function Nav() {
             <Grid item xs={12} sm={6}  className={styles.links}>
               <Link to="/" className={styles.link}>HOME</Link>
               <Link to="/about" className={styles.link}>ABOUT</Link>
-              <div className={styles.dropdown}>
               <Button 
-                className={styles.menuButton}
+                sx={{ 
+                  fontFamily: "'Urbanist', sans-serif",
+                  fontWeight: "bold",
+                  fontSize: "100%",
+                  textDecoration: "none",
+                  color: "#2a485c",
+                  padding: "2%",
+                  paddingRight: "1.5%",
+                  textShadow: "1.5px 1.5px black",
+                  "&:hover": 
+                  {
+                    color: "black",
+                    textDecoration: "underline",
+                  },
+                }}
                 aria-controls="basic-menu"
                 aria-haspopup="true"
                 aria-expanded={open ? 'true' : undefined}
@@ -55,7 +69,6 @@ function Nav() {
                   </MenuItem>
                 ))}
               </Menu>
-            </div>
           <Link to="/contact" className={styles.link}>CONTACT</Link>
         </Grid>
       </Grid>
