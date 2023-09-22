@@ -7,7 +7,7 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import data from "../../assets/serviceNavMenuData"
+import data from "../../assets/serviceData"
 
 
 
@@ -34,7 +34,7 @@ function Nav() {
               <Link to="/about" className={styles.link}>ABOUT</Link>
               <div className={styles.dropdown}>
               <Button 
-                className={styles.servicesButton}
+                className={styles.serviceButton}
                 aria-controls="basic-menu"
                 aria-haspopup="true"
                 aria-expanded={open ? 'true' : undefined}
@@ -46,7 +46,7 @@ function Nav() {
               open={open}
               onClose={handleClose}
               MenuListProps={{
-                'aria-labelledby': 'basic-button',
+                'aria-labelledby': 'basic-serviceButton',
               }}
               >
                 {data.map((data) => (

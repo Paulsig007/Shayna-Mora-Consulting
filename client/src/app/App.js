@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Container from '@mui/material/Container';
 
 // === Data ===
-import data from "../assets/serviceNavMenuData";
+import serviceData from "../assets/serviceData";
 
 // === Components ===
 import Nav from '../components/nav/Nav';
@@ -12,21 +12,21 @@ import Home from '../pages/home/Home';
 import styles from './App.module.css';
 // import About from '../pages/about/About';
 // import Contact from '../pages/contact/Contact';
-// import Services from '../pages/services/Services';
 function App() {
 
   return (
     <Router>
     <Container maxWidth="false" className={styles.App}>
       <Nav />
-        {data.map((data) => (
-      <Routes key={data.serviceLink}>
+      <Routes >
         <Route path="/" element={<Home />} />
         {/* <Route path="/about" element={<About />} /> */}
         {/* <Route path="/contact" element={<Contact />} /> */}
-        {/* <Route path={serviceLink} element={{servicePage}} /> */}
+        {/* {serviceData.map((data) => (
+        <Route key={data.serviceLink} path={data.serviceLink} element={
+          data.servicePage} />
+        ))} */}
       </Routes>
-        ))}
     </Container>
     </Router>
   );

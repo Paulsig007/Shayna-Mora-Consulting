@@ -4,7 +4,7 @@ import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import headshot from "../../assets/images/Headshot.png";
 import ServiceCard from "../../components/serviceCard/ServiceCard";
-import serviceCardData from "../../assets/serviceCardData";
+import serviceData from "../../assets/serviceData";
 import ServiceDescription from "../../components/serviceDescription/ServiceDescription";
 
 function Home() {
@@ -20,7 +20,7 @@ function Home() {
         </Grid>
       </Grid>
       <Grid container spacing={3} className={styles.serviceCardContainer}>
-        {serviceCardData.map((data) => (
+        {serviceData.map((data) => (
         <Grid container sx={{
           display: "flex",
           }}

@@ -11,7 +11,7 @@
     background-color: var(--light-teal);
 }
 
-.servicesButton {
+.serviceButton {
     font-family: 'Urbanist', sans-serif;
     font-size: 100%;
     text-decoration: none;
@@ -21,7 +21,7 @@
     text-shadow: 1.5px 1.5px black;
 }
 
-.servicesButton:hover{
+.serviceButton:hover{
     color: rgb(0, 0, 0);
     text-decoration: underline;
 }
