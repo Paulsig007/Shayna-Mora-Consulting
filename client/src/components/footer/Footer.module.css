@@ -1,0 +1,57 @@
+@import "../../styles/COLORS.css"; 
+
+.footerLogo{
+    width: 70%;
+}
+
+.footerLinkTitle,
+.footerServicesTitle{
+    font-size: 2.9vw;
+    font-weight: 600;
+    color: var(--dark-teal);
+}
+
+.footerLinkList{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footerLink{
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+}
+
+@media screen and (max-width: 1200px) {
+    .footerLink{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .footerLogo{
+        width: 60%;
+    }
+    .footerLink{
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .footerLogo{
+        width: 80%;
+    }
+
+    .footerLinkTitle,
+    .footerServicesTitle{
+        font-size: 4vw;
+        margin-bottom: 1%;
+    }
+
+    .footerLink{
+        font-size: 14px;
+    }
+    
+}
