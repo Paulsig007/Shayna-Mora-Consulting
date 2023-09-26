@@ -23,6 +23,16 @@
     color: black;
 }
 
+.liIcon{
+    width: 30%;
+    margin-right: -17%;
+}
+
+.calendlyIcon{
+    width: 58%;
+    margin-right: -17%;
+}
+
 @media screen and (max-width: 1200px) {
     .footerLink{
         font-size: 20px;
@@ -36,6 +46,13 @@
     .footerLink{
         font-size: 16px;
     }
+    /* .liIcon{
+        width: 25%;
+        margin-right: -17%;
+    }
+    .calendlyIcon{
+        width: 45%;
+    } */
     
 }
 

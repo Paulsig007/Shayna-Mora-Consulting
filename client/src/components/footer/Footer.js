@@ -4,6 +4,8 @@ import Grid from "@mui/material/Grid";
 import {Link} from "react-router-dom";
 import styles from "./Footer.module.css";
 import moraLogo from "../../assets/images/moraImages/mora-consulting-logo.png";
+import liIcon from "../../assets/images/socialIcons/linkedinIcon.png";
+import calendlyIcon from "../../assets/images/socialIcons/calendlyIcon.png";
 
 import serviceData from "../../assets/serviceData";
 
@@ -36,8 +38,6 @@ function Footer() {
           display: "flex",
           flexDirection: "column",
           marginBottom: "10",
-          // justifyContent: "center",
-          // alignItems: "center",
         }}>
           <h1 className={styles.footerLinkTitle}>
             Shayna
@@ -65,6 +65,42 @@ function Footer() {
             </li>
           </ul>
           ))}
+      </Grid>
+      <Grid item xs={12} sm={12} md={6} lg={6} sx={{
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center",
+        marginTop: "-5%",
+        '@media screen and (min-width: 1200px)': {
+          marginTop: "-15%",
+          marginLeft: "-5%",
+        },
+        '@media screen and (max-width: 1200px)': {
+          marginTop: "-15%",
+          marginLeft: "-5%",
+        },
+        '@media screen and (max-width: 900px)': {
+          marginTop: "2%",
+          marginLeft: "5%",
+        },
+        '@media screen and (max-width: 600px)': {
+          marginTop: "2%",
+          marginLeft: "10%",
+        },
+      }}>
+        <a 
+          className={styles.liIcon}
+          href='https://www.linkedin.com/in/shayna-mora-80316726b/'
+          >
+            <img src={liIcon} className={styles.liIcon} alt="LinkedIn Icon"/>
+        </a>
+        <a 
+          className={styles.calendlyIcon}
+          href='https://calendly.com/shaynamora'
+          >
+            <img src={calendlyIcon} className={styles.calendlyIcon} alt="CalendlyIcon"/>
+        </a>
       </Grid>
     </Grid>
     );
