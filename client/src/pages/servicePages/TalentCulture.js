@@ -1,6 +1,6 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
-import "./servicePages.css"
+import styles from "./servicePage.module.css"
 
 import TalentCultureImg from "../../assets/images/serviceImages/talent-culture.jpg";
 
@@ -23,7 +23,7 @@ function TalentCulture() {
       }}
     >
       <Grid item sm={12} md={12} lg={12}>
-        <p className="servicePageTitle">
+        <p className={styles.servicePageTitle}>
           Talent, People Operations, and Culture
         </p>
       </Grid>
@@ -31,11 +31,11 @@ function TalentCulture() {
         <img
           src={TalentCultureImg}
           alt="Talent, People Operations, and Culture"
-          className="servicePageImage"
+          className={styles.servicePageImage}
         />
       </Grid>
       <Grid item sm={12} md={6}>
-        <p className="servicePageText">
+        <p className={styles.servicePageText}>
           Shayna's prowess in talent management and team culture shines as an
           embedded fractional Chief People Officer. She architects systems,
           processes, and policies that optimize human asset administration,
@@ -48,10 +48,13 @@ function TalentCulture() {
           collaborations.
         </p>
       </Grid>
-      <Grid item sm={12} md={12} lg={12}>
+      <Grid item sm={12} md={12} lg={12} sx={{
+        marginTop: "2%",
+        marginBottom: "5%"
+      }}>
         <ul>
           {servicePageBullets.map((bullet) => (
-            <li className="servicePageBullets">{bullet}</li>
+            <li className={styles.servicePageBullets}>{bullet}</li>
           ))}
         </ul>
       </Grid>

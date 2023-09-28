@@ -6,7 +6,7 @@ const serviceData = [
     //ServiceCard props
     cardIcon: serviceIcons.hiringIcon,
     cardTitle: "Talent, People Operations & Culture",
-    cardText: "Click here for more",
+    cardText: "Click to learn more",
     //ServiceDescription propsServiceDescription props
     serviceTitle: "Create the right team and culture",
     serviceText:
@@ -16,26 +16,12 @@ const serviceData = [
     serviceLinkTab: "Talent & Culture",
     //App props
     servicePage: "<TalentCulture />",
-    //ServicePage props
-    // servicePageTitle: "Talent, People Operations, and Culture",
-    // servicePageImage: serviceImages.talentCulture,
-    // servicePageImgAlt: "Talent, People Operations, and Culture",
-    // servicePageText:
-    //   "Shayna's prowess in talent management and team culture shines as an embedded fractional Chief People Officer. She architects systems, processes, and policies that optimize human asset administration, harmonizing transitions with fiscal and operational facets. Her guidance in values-driven visioning and strategic planning ensures the seamless realization of staffing schedules, compensation frameworks, and inclusive benefits strategies. Shayna's emphasis on fostering belonging and culture is channeled into retention-centric tactics, empowering staff with reflective growth avenues and forging impactful collaborations.",
-    // servicePageBullets: [
-    //   "Develop streamlined systems, processes, and policies for Human Assets administration.",
-    //   "Execute values-based strategic planning, inclusive compensation, and intentional application materials.",
-    //   "Strengthen organizational culture tied to retention, satisfaction, and effective hiring.",
-    //   "Conduct organizational culture audits and implement responsive plans.",
-    //   "Cultivate staff culture through meaningful opportunities for collaboration, reflection, learning, and community building.",
-    //   "One-on-one coaching for c-suite and non-profit executives looking for their next professional opportunity.",
-    // ],
   },
   {
     //ServiceCard props
     cardIcon: serviceIcons.developmentIcon,
     cardTitle: "People Management & Development",
-    cardText: "Click here for more",
+    cardText: "Click to learn more",
     //ServiceDescription props
     serviceTitle: "Manage and develop your people",
     serviceText:

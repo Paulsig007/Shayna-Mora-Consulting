@@ -72,12 +72,23 @@ function Footer() {
         justifyContent: "center",
         alignItems: "center",
         marginTop: "-5%",
-        '@media screen and (min-width: 1200px)': {
-          marginTop: "-15%",
+        '@media screen and (min-width: 2000px)': {
+          marginTop: "-10%",
           marginLeft: "-5%",
         },
+       '@media screen and (max-width: 2000px)': {
+          marginTop: "-10%",
+          marginLeft: "-5%",
+        },
+        '@media screen and (max-width: 1800px)': {
+          marginTop: "-10%",
+          marginLeft: "-5%",
+        },
+        '@media screen and (max-width: 1400px)': {
+          marginTop: "-10%",
+        },
         '@media screen and (max-width: 1200px)': {
-          marginTop: "-15%",
+          marginTop: "-10%",
           marginLeft: "-5%",
         },
         '@media screen and (max-width: 900px)': {
@@ -109,6 +120,4 @@ function Footer() {
     export default Footer;
     
     
-    {/* <a target="_blank" href="https://icons8.com/icon/ZB8sgOZTAd0T/inspection"></a>;
-    <p> Icons by</p>; 
-    <a target="_blank" href="https://icons8.com">Icons8</a> */}
+   

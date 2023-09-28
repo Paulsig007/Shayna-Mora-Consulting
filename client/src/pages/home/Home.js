@@ -34,6 +34,7 @@ function Home() {
             }}
           >
             <ServiceCard 
+            serviceLink= {data.serviceLink}
             cardIcon= {data.cardIcon}
             cardTitle= {data.cardTitle}
             cardText= {data.cardText}

@@ -4,6 +4,11 @@
     font-family: 'Urbanist', sans-serif;
 }
 
+.serviceLink{
+    text-decoration: none;
+    color: black;
+}
+
 .card{
     position: relative;
     width: 100%;

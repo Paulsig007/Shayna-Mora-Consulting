@@ -61,6 +61,15 @@ input[type="submit"]:hover {
   transform: scale(1.02);
 }
 
+@media screen and (min-width: 1600px) {
+  .contactTitle {
+    font-size: 50px;
+  }
+  .contactText {
+    font-size: 30px;
+  }
+}
+
 @media screen and (max-width: 1600px) {
   .contactTitle {
     font-size: 3.2vw;
