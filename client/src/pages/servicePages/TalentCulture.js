@@ -3,6 +3,7 @@ import Grid from "@mui/material/Grid";
 import styles from "./servicePage.module.css"
 
 import TalentCultureImg from "../../assets/images/serviceImages/talent-culture.jpg";
+import HopeboundLogo from "../../assets/images/orgLogos/Hopebound.png";
 
 function TalentCulture() {
   const servicePageBullets = [
@@ -50,13 +51,20 @@ function TalentCulture() {
       </Grid>
       <Grid item sm={12} md={12} lg={12} sx={{
         marginTop: "2%",
-        marginBottom: "5%"
       }}>
         <ul>
           {servicePageBullets.map((bullet) => (
             <li className={styles.servicePageBullets}>{bullet}</li>
           ))}
         </ul>
+      </Grid>
+      <Grid item sm={12} md={12} lg={12}>
+        <p className={styles.relevantCompaniesTitle}>
+        Partnership Spotlight:
+        </p>
+        <a href="https://www.hopebound.com/" target="_blank" rel="noreferrer" className={styles.companyATag}>
+        <img src={HopeboundLogo} alt="Hopebound Logo" className={styles.talentHopeboundLogo} />
+        </a>
       </Grid>
     </Grid>
   );

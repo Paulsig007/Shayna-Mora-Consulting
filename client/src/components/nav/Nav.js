@@ -60,13 +60,13 @@ function Nav() {
             className={styles.menu}
             anchorEl={anchorEl}
             open={open}
-            onClose={handleClose}
+            // onClose={handleClose}
             MenuListProps={{
               "aria-labelledby": "basic-menuButton",
             }}
           >
             {data.map((data) => (
-              <MenuItem className={styles.menuItem} key={data.serviceLink}>
+              <MenuItem className={styles.menuItem} key={data.serviceLink} onClick={handleClose}>
                 <Link to={data.serviceLink} className={styles.menuLink}>
                   {data.serviceLinkTab}
                 </Link>

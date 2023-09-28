@@ -1,3 +1,5 @@
+@import "../../styles/COLORS.css";
+
 .contactTitle {
   margin-bottom: 0;
 }
@@ -45,7 +47,7 @@ input[type="submit"] {
   font-size: 2vw;
   width: 90%;
   font-weight: 700;
-  background-color: #fcad37;
+  background-color: var(--dark-teal);
   color: white;
   padding: 1%;
   margin-left: 1%;

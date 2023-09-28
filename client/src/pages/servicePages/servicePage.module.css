@@ -6,7 +6,7 @@
 .servicePageImage {
   width: 80%;
   margin-left: 10%;
-  border-radius: 10%/18%;
+  border-radius: 50% 25% / 25% 40%;
   box-shadow: 1px 1px 10px 1px #888888;
 }
 
@@ -21,9 +21,50 @@
 .servicePageBullets{
   width: 80%;
   margin: 2% 0 0% 10%;
-  margin-left: 10%;
-  margin-top: 2%;
   font-size: 1.5vw;
   text-align: justify;
 
+}
+
+.relevantCompaniesTitle{
+  text-align: center;
+  font-size: 2.5vw;
+}
+
+.companyATag{
+  display: flex;
+  justify-content: center;
+}
+
+/*=== Org Logos === */
+
+.talentHopeboundLogo{
+  width: 20%;
+  margin-bottom: 3%;
+}
+
+.coleagueLogo{
+  width: 20%;
+  margin-bottom: 3%;
+}
+
+.TFALogo{
+  width: 20%;
+  margin-bottom: 3%;
+}
+
+.ElEdLogo{
+  width: 10%;
+  margin-bottom: 3%;
+  box-shadow: 1px 1px 5px 1px #888888;
+}
+
+.IACLogo{
+  width: 10%;
+  margin-bottom: 3%;
+}
+
+.vChiefLogo{
+  width: 15%;
+  margin-bottom: 3%;
 }

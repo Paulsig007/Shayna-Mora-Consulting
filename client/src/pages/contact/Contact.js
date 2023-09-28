@@ -49,8 +49,7 @@ function Contact() {
       </Grid>
       <Grid item sm={12}>
         <p className={styles.contactText}>
-          If you have any questions, or just want to talk shop, please fill out
-          the form below and I will get back to you as soon as possible.
+        Should you have any inquiries regarding my profile or the services I provide, please do not hesitate to reach out via the provided contact form. I assure you that I will respond promptly to your queries.        
         </p>
       </Grid>
       <form ref={form} onSubmit={sendEmail}>

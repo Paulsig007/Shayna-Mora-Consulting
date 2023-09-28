@@ -2,11 +2,14 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 import styles from "./servicePage.module.css"
 
-// import TalentCultureImg from "../../assets/images/serviceImages/talent-culture.jpg";
+import boardGovernanceImg from "../../assets/images/serviceImages/board-mgmt.jpg";
+import vChiefLogo from "../../assets/images/orgLogos/vchiefLogo.webp";
 
-function MgmtDevelopment() {
+function StrategySupport() {
   const servicePageBullets = [
-    
+    "Provide comprehensive board reporting, delivering insights on fiscal progress, impact, and initiatives.",
+    "Develop and manage cross-cutting initiatives aligned with organizational goals and vision.",
+    "Monitor, report, and follow up on audit support while ensuring compliance in all areas.",
   ];
 
   return (
@@ -19,33 +22,25 @@ function MgmtDevelopment() {
     >
       <Grid item sm={12} md={12} lg={12}>
         <p className={styles.servicePageTitle}>
-          {/*  */}
+          {/* Title */}
+          Board Management & Governance
         </p>
       </Grid>
       <Grid item sm={12} md={6}>
         <img
-        //   src={}
-          alt="Talent, People Operations, and Culture"
+          src={boardGovernanceImg}
+          alt=""
           className={styles.servicePageImage}
         />
       </Grid>
       <Grid item sm={12} md={6}>
         <p className={styles.servicePageText}>
-          {/* Shayna's prowess in talent management and team culture shines as an
-          embedded fractional Chief People Officer. She architects systems,
-          processes, and policies that optimize human asset administration,
-          harmonizing transitions with fiscal and operational facets. Her
-          guidance in values-driven visioning and strategic planning ensures the
-          seamless realization of staffing schedules, compensation frameworks,
-          and inclusive benefits strategies. Shayna's emphasis on fostering
-          belonging and culture is channeled into retention-centric tactics,
-          empowering staff with reflective growth avenues and forging impactful
-          collaborations. */}
+          {/* Text */}
+          Shayna seamlessly handles board reporting, offering valuable insights into fiscal progress, impact, and initiatives. Her adeptness at managing cross-cutting initiatives aligned with organizational goals is apparent in her strategic approach to board and fiscal sustainability. Demonstrating her commitment to compliance, progress tracking, and audit support, Shayna embodies a holistic approach to board management.
         </p>
       </Grid>
       <Grid item sm={12} md={12} lg={12} sx={{
         marginTop: "2%",
-        marginBottom: "5%"
       }}>
         <ul>
           {servicePageBullets.map((bullet) => (
@@ -53,8 +48,16 @@ function MgmtDevelopment() {
           ))}
         </ul>
       </Grid>
+      <Grid item sm={12} md={12} lg={12}>
+        <p className={styles.relevantCompaniesTitle}>
+          Partnership Spotlight:
+        </p>
+        <a href="https://vchiefs.com/" target="_blank" rel="noreferrer" className={styles.companyATag}>
+        <img src={vChiefLogo} alt="ColeaguePartners Logo" className={styles.vChiefLogo} />
+        </a>
+      </Grid>
     </Grid>
   );
 }
 
-export default MgmtDevelopment;
+export default StrategySupport;

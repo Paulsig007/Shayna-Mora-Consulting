@@ -33,10 +33,7 @@ function App(props) {
           <Route path="/contact" element={<Contact />} />
           <Route path="/talent-culture" element={<TalentCulture />} />
           <Route path="/mgmt-development" element={<MgmtDevelopment />} />
-          <Route
-            path="/financial-compliance"
-            element={<FinancialCompliance />}
-          />
+          <Route path="/financial-compliance" element={<FinancialCompliance />}/>
           <Route path="/projects-innovation" element={<ProjectInnovation />} />
           <Route path="/strategy-support" element={<StrategySupport />} />
           <Route path="/board-governance" element={<BoardGovernance />} />

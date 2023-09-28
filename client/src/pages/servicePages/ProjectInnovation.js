@@ -2,11 +2,14 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 import styles from "./servicePage.module.css"
 
-// import TalentCultureImg from "../../assets/images/serviceImages/talent-culture.jpg";
+import innovationImg from "../../assets/images/serviceImages/innovation.jpg";
+import ElEdLogo from "../../assets/images/orgLogos/ElEdLogo.jpeg";
 
-function MgmtDevelopment() {
+function ProjectInnovation() {
   const servicePageBullets = [
-    
+    "Drive the development of new programs from conceptualization to completion.",
+    "Design and lead cross-functional projects, setting objectives, timelines, and ensuring team buy-in.",
+    "Create collaboration and information-sharing systems within teams and across the organization.",
   ];
 
   return (
@@ -19,33 +22,25 @@ function MgmtDevelopment() {
     >
       <Grid item sm={12} md={12} lg={12}>
         <p className={styles.servicePageTitle}>
-          {/*  */}
+          {/* Title */}
+          Special Projects & Innovation
         </p>
       </Grid>
       <Grid item sm={12} md={6}>
         <img
-        //   src={}
-          alt="Talent, People Operations, and Culture"
+          src={innovationImg}
+          alt="Financial & Compliance Management"
           className={styles.servicePageImage}
         />
       </Grid>
       <Grid item sm={12} md={6}>
         <p className={styles.servicePageText}>
-          {/* Shayna's prowess in talent management and team culture shines as an
-          embedded fractional Chief People Officer. She architects systems,
-          processes, and policies that optimize human asset administration,
-          harmonizing transitions with fiscal and operational facets. Her
-          guidance in values-driven visioning and strategic planning ensures the
-          seamless realization of staffing schedules, compensation frameworks,
-          and inclusive benefits strategies. Shayna's emphasis on fostering
-          belonging and culture is channeled into retention-centric tactics,
-          empowering staff with reflective growth avenues and forging impactful
-          collaborations. */}
+          {/* Text */}
+          Shayna has a dynamic approach to special project management . Her involvement in new program development and cross-functional projects has equipped her with the skills to design projects, set objectives, and execute them seamlessly. Shayna's talent lies in creating collaboration and information-sharing systems, whether within teams or across the organization, fostering efficient project management and innovative problem-solving.
         </p>
       </Grid>
       <Grid item sm={12} md={12} lg={12} sx={{
         marginTop: "2%",
-        marginBottom: "5%"
       }}>
         <ul>
           {servicePageBullets.map((bullet) => (
@@ -53,8 +48,16 @@ function MgmtDevelopment() {
           ))}
         </ul>
       </Grid>
+      <Grid item sm={12} md={12} lg={12}>
+        <p className={styles.relevantCompaniesTitle}>
+        Partnership Spotlight:
+        </p>
+        <a href="https://eleducation.org/" target="_blank" rel="noreferrer" className={styles.companyATag}>
+        <img src={ElEdLogo} alt="ColeaguePartners Logo" className={styles.ElEdLogo} />
+        </a>
+      </Grid>
     </Grid>
   );
 }
 
-export default MgmtDevelopment;
+export default ProjectInnovation;
