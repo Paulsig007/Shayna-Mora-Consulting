@@ -1,5 +1,6 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
+import "./servicePages.css"
 
 import TalentCultureImg from "../../assets/images/serviceImages/talent-culture.jpg";
 
@@ -18,7 +19,6 @@ function TalentCulture() {
       container
       sx={{
         display: "flex",
-        // flexDirection: "column",
         alignItems: "center",
       }}
     >

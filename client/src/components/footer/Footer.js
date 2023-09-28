@@ -32,7 +32,7 @@ function Footer() {
             alignItems: "center",
           },
         }}>
-          <img src={moraLogo} className={styles.footerLogo}/>
+          <img src={moraLogo} alt="Mora Consulting Logo"className={styles.footerLogo}/>
         </Grid>
         <Grid item xs={12} sm={6} md={3} sx={{
           display: "flex",
