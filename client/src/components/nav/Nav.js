@@ -7,73 +7,79 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import data from "../../assets/serviceData"
-
-
-
+import data from "../../assets/serviceData";
 
 function Nav() {
-    const [anchorEl, setAnchorEl] = React.useState(null);
-    const open = Boolean(anchorEl);
-    const handleClick = (event) => {
-        event.preventDefault();
-        setAnchorEl(event.currentTarget);
-    };
-    const handleClose = (event) => {
-        event.preventDefault();
-        setAnchorEl(null);
-    };
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    event.preventDefault();
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = (event) => {
+    event.preventDefault();
+    setAnchorEl(null);
+  };
 
-    return (
-        <Box className={styles.Box}>
-          <Grid container className={styles.nav}>
-            <Grid item xs={12} sm={6}  >
-              <img src={Logo} alt="Mora Consulting Logo" className={styles.logo} />
-            </Grid>
-            <Grid item xs={12} sm={6}  className={styles.links}>
-              <Link to="/" className={styles.link}>HOME</Link>
-              <Link to="/about" className={styles.link}>ABOUT</Link>
-              <Button 
-                sx={{ 
-                  fontFamily: "'Urbanist', sans-serif",
-                  fontWeight: "bold",
-                  fontSize: "100%",
-                  textDecoration: "none",
-                  color: "#2a485c",
-                  padding: "2%",
-                  paddingRight: "1.5%",
-                  textShadow: "1.5px 1.5px black",
-                  "&:hover": 
-                  {
-                    color: "black",
-                    textDecoration: "underline",
-                  },
-                }}
-                aria-controls="basic-menu"
-                aria-haspopup="true"
-                aria-expanded={open ? 'true' : undefined}
-                onClick={handleClick}
-              >SERVICES</Button>
-              <Menu 
-              className={styles.menu}
-              anchorEl={anchorEl}
-              open={open}
-              onClose={handleClose}
-              MenuListProps={{
-                'aria-labelledby': 'basic-menuButton',
-              }}
-              >
-                {data.map((data) => (
-                  <MenuItem className={styles.menuItem} key={data.serviceLink}>
-                    <Link to={data.serviceLink} className={styles.menuLink}>{data.serviceLinkTab}</Link>
-                  </MenuItem>
-                ))}
-              </Menu>
-          <Link to="/contact" className={styles.link}>CONTACT</Link>
+  return (
+    <Box className={styles.Box}>
+      <Grid container className={styles.nav}>
+        <Grid item xs={12} sm={6}>
+          <img src={Logo} alt="Mora Consulting Logo" className={styles.logo} />
+        </Grid>
+        <Grid item xs={12} sm={6} className={styles.links}>
+          <Link to="/" className={styles.link}>
+            HOME
+          </Link>
+          <Link to="/about" className={styles.link}>
+            ABOUT
+          </Link>
+          <Button
+            sx={{
+              fontFamily: "'Urbanist', sans-serif",
+              fontWeight: "bold",
+              fontSize: "100%",
+              textDecoration: "none",
+              color: "#2a485c",
+              padding: "2%",
+              paddingRight: "1.5%",
+              textShadow: "1.5px 1.5px black",
+              "&:hover": {
+                color: "black",
+                textDecoration: "underline",
+              },
+            }}
+            aria-controls="basic-menu"
+            aria-haspopup="true"
+            aria-expanded={open ? "true" : undefined}
+            onClick={handleClick}
+          >
+            SERVICES
+          </Button>
+          <Menu
+            className={styles.menu}
+            anchorEl={anchorEl}
+            open={open}
+            onClose={handleClose}
+            MenuListProps={{
+              "aria-labelledby": "basic-menuButton",
+            }}
+          >
+            {data.map((data) => (
+              <MenuItem className={styles.menuItem} key={data.serviceLink}>
+                <Link to={data.serviceLink} className={styles.menuLink}>
+                  {data.serviceLinkTab}
+                </Link>
+              </MenuItem>
+            ))}
+          </Menu>
+          <Link to="/contact" className={styles.link}>
+            CONTACT
+          </Link>
         </Grid>
       </Grid>
     </Box>
-    );
-};
+  );
+}
 
 export default Nav;
