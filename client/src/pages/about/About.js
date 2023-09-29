@@ -1,8 +1,6 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import headshot from "../../assets/images/moraImages/Headshot.png";
-import resume from "../../assets/mora-shayna-cv.pdf";
-import resumeIcon from "../../assets/images/moraImages/resumeIcon.png";
 import styles from "./About.module.css";
 
 function About() {
@@ -24,14 +22,6 @@ function About() {
       >
         <img src={headshot} alt="Headshot" className={styles.headshot} />
         <h1 className={styles.aboutTitle}>About Shayna</h1>
-        <a className={styles.resume} href={resume} download>
-          <img
-            src={resumeIcon}
-            alt="Resume Icon"
-            className={styles.resumeIcon}
-          />
-        </a>
-        <p className={styles.resumeText}>Download My CV</p>
       </Grid>
       <Grid
         item
@@ -90,14 +80,14 @@ function About() {
             justifyContent: "center",
           }}
         >
-          <a className={styles.bottomResume} href={resume} download>
+          {/* <a className={styles.bottomResume} href={resume} download>
             <img
               src={resumeIcon}
               alt="Resume Icon"
               className={styles.bottomResumeIcon}
             />
           </a>
-          <p className={styles.bottomResumeText}>Download My CV</p>
+          <p className={styles.bottomResumeText}>Download My CV</p> */}
         </Grid>
       </Grid>
     </Grid>

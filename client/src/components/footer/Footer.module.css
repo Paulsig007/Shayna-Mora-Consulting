@@ -8,7 +8,7 @@
 .footerServicesTitle{
     font-size: 2.9vw;
     font-weight: 600;
-    color: var(--dark-teal);
+    color: rgb(75, 75, 75);
 }
 
 .footerLinkList{
@@ -20,18 +20,9 @@
 .footerLink{
     font-size: 24px;
     font-weight: 400;
-    color: black;
+    color: rgb(75, 75, 75);
 }
 
-.liIcon{
-    width: 30%;
-    margin-right: -17%;
-}
-
-.calendlyIcon{
-    width: 58%;
-    margin-right: -17%;
-}
 
 @media screen and (max-width: 1200px) {
     .footerLink{
@@ -45,13 +36,6 @@
     }
     .footerLink{
         font-size: 16px;
-    }
-    .liIcon{
-        width: 25%;
-        margin-right: -17%;
-    }
-    .calendlyIcon{
-        width: 45%;
     }
     
 }

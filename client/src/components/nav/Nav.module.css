@@ -7,7 +7,7 @@
     margin: 0;
 }
 .nav{
-    background-color: var(--light-teal);
+    background-color: #e9e7e7;
 }
 
 .logo{
@@ -24,12 +24,12 @@
 }
 
 .link{
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--dark-blue);
+    /* text-decoration: none; */
+    /* font-weight: bold; */
+    color: rgb(75, 75, 75);
     padding: 2%;
     padding-right: 1.5%;
-    text-shadow: 1.5px 1.5px black;
+    /* text-shadow: 1.5px 1.5px black; */
 }
 
 .link:hover{

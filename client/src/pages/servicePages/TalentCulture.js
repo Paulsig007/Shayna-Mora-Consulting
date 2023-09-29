@@ -52,6 +52,9 @@ function TalentCulture() {
       <Grid item sm={12} md={12} lg={12} sx={{
         marginTop: "2%",
       }}>
+        <p className={styles.servicePageBulletsTitle}>
+          Services Include:
+        </p>
         <ul>
           {servicePageBullets.map((bullet) => (
             <li className={styles.servicePageBullets}>{bullet}</li>
@@ -62,7 +65,7 @@ function TalentCulture() {
         <p className={styles.relevantCompaniesTitle}>
         Partnership Spotlight:
         </p>
-        <a href="https://www.hopebound.com/" target="_blank" rel="noreferrer" className={styles.companyATag}>
+        <a href="https://www.hopebound.com/about-us/hopebound-staff/" target="_blank" rel="noreferrer" className={styles.companyATag}>
         <img src={HopeboundLogo} alt="Hopebound Logo" className={styles.talentHopeboundLogo} />
         </a>
       </Grid>

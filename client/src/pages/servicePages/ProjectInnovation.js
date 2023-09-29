@@ -42,6 +42,9 @@ function ProjectInnovation() {
       <Grid item sm={12} md={12} lg={12} sx={{
         marginTop: "2%",
       }}>
+        <p className={styles.servicePageBulletsTitle}>
+          Services Include:
+        </p>
         <ul>
           {servicePageBullets.map((bullet) => (
             <li className={styles.servicePageBullets}>{bullet}</li>

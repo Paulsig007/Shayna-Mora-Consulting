@@ -2,11 +2,13 @@
 
 .contactTitle {
   margin-bottom: 0;
+  color: rgb(75, 75, 75);
 }
 
 .contactText {
   margin-top: 0;
   margin-bottom: 5%;
+  color: rgb(75, 75, 75);
 }
 
 form {
@@ -15,6 +17,7 @@ form {
 
 .conLabel {
   margin-top: 1%;
+  color: rgb(75, 75, 75);
   font-size: 2vw;
 }
 

@@ -8,7 +8,7 @@
 .aboutTitle {
   font-size: 4vw;
   font-weight: bold;
-  color: var(--dark-blue);
+  color: rgb(75, 75, 75);
 }
 
 .resume {
@@ -38,28 +38,18 @@
 .bottomResumeText {
   font-size: 20px;
   font-weight: bold;
+  color: rgb(75, 75, 75);
 }
 
 .aboutText {
   font-size: 24px;
-}
-
-@media screen and (min-width: 1200px) {
-  .bottomResume,
-  .bottomResumeText {
-    display: none;
-  }
+  color: rgb(75, 75, 75);
 }
 
 @media screen and (max-width: 1200px) {
   .headshot {
-    width: 40%;
-  }
-
-  .headshot,
-  .resume,
-  .resumeText {
-    display: none;
+    width: 30%;
+    margin: 2% 0 0 0;
   }
 
   .titleContainer {
@@ -67,7 +57,8 @@
   }
 
   .aboutTitle {
-    font-size: 6vw;
+    font-size: 5vw;
+    margin-top: 2%;
     margin-bottom: 0;
   }
 
@@ -78,11 +69,11 @@
 
 @media screen and (max-width: 900px) {
   .headshot {
-    width: 40%;
+    width: 35%;
   }
 
   .aboutTitle {
-    font-size: 6vw;
+    font-size: 5.5vw;
   }
 
   .aboutText {
@@ -92,7 +83,8 @@
 
 @media screen and (max-width: 600px) {
   .headshot {
-    width: 80%;
+    width: 45%;
+    margin: 5% 0 0 0;
   }
 
   .aboutTitle {

@@ -23,7 +23,10 @@ function Nav() {
 
   return (
     <Box className={styles.Box}>
-      <Grid container className={styles.nav}>
+      <Grid container className={styles.nav} sx={{ 
+        boxShadow: "1px 1px 8px rgb(81, 79, 79)",
+      }}
+      >
         <Grid item xs={12} sm={6}>
           <img src={Logo} alt="Mora Consulting Logo" className={styles.logo} />
         </Grid>
@@ -36,14 +39,12 @@ function Nav() {
           </Link>
           <Button
             sx={{
-              fontFamily: "'Urbanist', sans-serif",
-              fontWeight: "bold",
+              // fontWeight: "bold",
               fontSize: "100%",
-              textDecoration: "none",
-              color: "#2a485c",
+              textDecoration: "underline",
+              color: "rgb(75, 75, 75)",
               padding: "2%",
               paddingRight: "1.5%",
-              textShadow: "1.5px 1.5px black",
               "&:hover": {
                 color: "black",
                 textDecoration: "underline",

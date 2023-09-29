@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid";
 import styles from "./servicePage.module.css"
 
 import strategicPlanningImg from "../../assets/images/serviceImages/strategic-planning.jpg";
-import IACLogo from "../../assets/images/orgLogos/IACLogo.webp";
+import IACLogo from "../../assets/images/orgLogos/IACLogo.jpg";
 
 function StrategySupport() {
   const servicePageBullets = [
@@ -42,6 +42,9 @@ function StrategySupport() {
       <Grid item sm={12} md={12} lg={12} sx={{
         marginTop: "2%",
       }}>
+        <p className={styles.servicePageBulletsTitle}>
+          Services Include:
+        </p>
         <ul>
           {servicePageBullets.map((bullet) => (
             <li className={styles.servicePageBullets}>{bullet}</li>

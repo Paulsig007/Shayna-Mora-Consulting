@@ -4,12 +4,35 @@ import Grid from "@mui/material/Grid";
 import {Link} from "react-router-dom";
 import styles from "./Footer.module.css";
 import moraLogo from "../../assets/images/moraImages/mora-consulting-logo.png";
-import liIcon from "../../assets/images/socialIcons/linkedinIcon.png";
-import calendlyIcon from "../../assets/images/socialIcons/calendlyIcon.png";
 
 import serviceData from "../../assets/serviceData";
 
 function Footer() {
+  const siteNavigation = [
+    {
+      link: "/",
+      tab: "Home",
+    },
+    {
+      link: "/about",
+      tab: "About",
+    },
+    {
+      link: "/contact",
+      tab: "Contact",
+    }
+  ];
+  const socialMedia = [
+    {
+      social: "https://www.linkedin.com/in/shayna-mora-80316726b/",
+      tab: "LinkedIn"
+    },
+    {
+      social: "https://calendly.com/shaynamora",
+      tab: "Schedule a Call"
+    }
+  ];
+
   return (
     <Grid container sx={{
       backgroundColor: "#f1f1ef",
@@ -34,7 +57,7 @@ function Footer() {
         }}>
           <img src={moraLogo} alt="Mora Consulting Logo"className={styles.footerLogo}/>
         </Grid>
-        <Grid item xs={12} sm={6} md={3} sx={{
+        <Grid item xs={6} sm={6} md={3} sx={{
           display: "flex",
           flexDirection: "column",
           marginBottom: "10",
@@ -42,19 +65,23 @@ function Footer() {
           <h1 className={styles.footerLinkTitle}>
             Shayna
           </h1>
-          <ul className={styles.footerLinkList}>
+          {siteNavigation.map((data) => (
+          <ul key={data.link} className={styles.footerLinkList}>
             <li>
-              <Link to ="/" className={styles.footerLink}>Home</Link>
-            </li>
-            <li>
-              <Link to ="/about" className={styles.footerLink}>About</Link>
-            </li>
-            <li>
-              <Link to ="/contact" className={styles.footerLink}>Contact</Link>
+              <Link to ={data.link} className={styles.footerLink}>{data.tab}</Link>
             </li>
           </ul>
+          ))  
+          }
+          {socialMedia.map((data) => (
+            <ul key={data.social} className={styles.footerLinkList}>
+            <li>
+              <a href={data.social} target="_blank" rel="noreferrer" className={styles.footerLink}>{data.tab}</a>
+            </li>
+          </ul>
+          ))}
         </Grid>
-        <Grid item xs={12} sm={6} md={3}>
+        <Grid item xs={6} sm={6} md={3}>
           <h1 className={styles.footerServicesTitle}>
             Services
           </h1>
@@ -65,53 +92,6 @@ function Footer() {
             </li>
           </ul>
           ))}
-      </Grid>
-      <Grid item xs={12} sm={12} md={6} lg={6} sx={{
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "center",
-        alignItems: "center",
-        marginTop: "-5%",
-        '@media screen and (min-width: 2000px)': {
-          marginTop: "-10%",
-          marginLeft: "-5%",
-        },
-       '@media screen and (max-width: 2000px)': {
-          marginTop: "-10%",
-          marginLeft: "-5%",
-        },
-        '@media screen and (max-width: 1800px)': {
-          marginTop: "-10%",
-          marginLeft: "-5%",
-        },
-        '@media screen and (max-width: 1400px)': {
-          marginTop: "-10%",
-        },
-        '@media screen and (max-width: 1200px)': {
-          marginTop: "-10%",
-          marginLeft: "-5%",
-        },
-        '@media screen and (max-width: 900px)': {
-          marginTop: "2%",
-          marginLeft: "5%",
-        },
-        '@media screen and (max-width: 600px)': {
-          marginTop: "2%",
-          marginLeft: "10%",
-        },
-      }}>
-        <a 
-          className={styles.liIcon}
-          href='https://www.linkedin.com/in/shayna-mora-80316726b/'
-          >
-            <img src={liIcon} className={styles.liIcon} alt="LinkedIn Icon"/>
-        </a>
-        <a 
-          className={styles.calendlyIcon}
-          href='https://calendly.com/shaynamora'
-          >
-            <img src={calendlyIcon} className={styles.calendlyIcon} alt="CalendlyIcon"/>
-        </a>
       </Grid>
     </Grid>
     );

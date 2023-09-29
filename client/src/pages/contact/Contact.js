@@ -44,7 +44,7 @@ function Contact() {
       </Grid>
       <Grid item sm={12}>
         <p className={styles.contactText}>
-        Should you have any inquiries regarding my profile or the services I provide, please do not hesitate to reach out via the provided contact form. I assure you that I will respond promptly to your queries.        
+        Reach out for more information on my services and how I can fractionally support your organization!       
         </p>
       </Grid>
       <form ref={form} onSubmit={sendEmail}>
@@ -67,7 +67,6 @@ function Contact() {
           <textarea
             id="contMessage"
             name="message"
-            placeholder="How can I assist you?"
           />
         </Grid>
         <Grid item sm={12}>

@@ -12,9 +12,6 @@ function Home() {
   <Box className={styles.home}>
     <Grid container className={styles.home}>
       <Grid container className={styles.homeBanner}>
-        <Grid item xs={12} sm={6} className={styles.headshotContainer}> 
-          <img src={headshot} alt="Headshot" className={styles.headshot} />
-        </Grid>
         <Grid item xs={12} sm={6} className={styles.textContainer}>
           <p className={styles.text}>Enhancing organizational capacity through strategic leadership in operations and human resources management</p>
         </Grid>
