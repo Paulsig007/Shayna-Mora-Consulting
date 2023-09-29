@@ -40,7 +40,8 @@
 
 .talentHopeboundLogo{
   width: 20%;
-  margin-bottom: 3%;
+  margin-top: -1%;
+  margin-bottom: 4%;
 }
 
 .coleagueLogo{
@@ -61,10 +62,102 @@
 
 .IACLogo{
   width: 10%;
+  margin-top: -1%;
   margin-bottom: 3%;
 }
 
 .vChiefLogo{
   width: 15%;
-  margin-bottom: 3%;
+  margin-top: -1%;
+  margin-bottom: 4%;
+}
+
+@media screen and (max-width: 1200px) {
+  .servicePageTitle{
+    font-size: 3.5vw;
+  }
+  
+  .servicePageText {
+    font-size: 1.8vw;
+  }
+  
+  .servicePageBullets{
+    font-size: 1.8vw;
+  }
+  
+  .relevantCompaniesTitle{
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .servicePageTitle{
+    font-size: 3.8vw;
+  }
+
+  .servicePageImage{
+    width: 40%;
+    margin-left: 30%;
+    margin-bottom: 2%;
+  }
+  
+  .servicePageText {
+    font-size: 2.1vw;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 0;
+  }
+  
+  .servicePageBullets{
+    font-size: 2.1vw;
+  }
+  
+  .relevantCompaniesTitle{
+    font-size: 3vw;
+  }
+  /* org logos */
+  .talentHopeboundLogo{
+    width: 150px; 
+  }
+  
+  .coleagueLogo{
+    width: 150px;
+  }
+  
+  .TFALogo{
+    width: 150px;
+  }
+  
+  .ElEdLogo{
+    width: 85px;
+  }
+  
+  .IACLogo{
+    width: 90px;
+  }
+  
+  .vChiefLogo{
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .servicePageTitle{
+    font-size: 32px;
+  }
+  .servicePageText,
+  .servicePageBullets{
+    font-size: 18px;
+  }
+  .relevantCompaniesTitle{
+    font-size: 25px;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .companyATag{
+    display: flex;
+    justify-content: center;
+  }
 }

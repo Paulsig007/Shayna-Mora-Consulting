@@ -22,7 +22,7 @@ import {
   BoardGovernance,
 } from "../pages/servicePages/index";
 
-function App(props) {
+function App() {
   return (
     <Router>
       <Container maxWidth="false" className={styles.App}>

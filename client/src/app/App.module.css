@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Mate+SC&family=Noto+Sans+Old+Permic&family=Open+Sans&family=Prompt:wght@300&family=Raleway:wght@800&family=Signika+Negative&family=Urbanist:wght@400;700&display=swap');
+
+
+*{
+    font-family: 'Prompt', sans-serif;
+    ;
+}
+
 .App{
-    padding: 0;
+    padding: -1%;
+    margin-top: -1%;
 }

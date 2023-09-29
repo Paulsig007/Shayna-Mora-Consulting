@@ -22,7 +22,7 @@ function Footer() {
         paddingTop: "1%",
       },
     }}>
-        <Grid sm={12} md={6} sx={{
+        <Grid item sm={12} md={6} sx={{
           display: "flex",
           flexDirection: "column",
           paddingTop: "1%",

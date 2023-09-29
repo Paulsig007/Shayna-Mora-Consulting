@@ -60,7 +60,7 @@ function Nav() {
             className={styles.menu}
             anchorEl={anchorEl}
             open={open}
-            // onClose={handleClose}
+            onClose={handleClose}
             MenuListProps={{
               "aria-labelledby": "basic-menuButton",
             }}

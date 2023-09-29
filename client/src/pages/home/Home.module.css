@@ -1,5 +1,4 @@
 @import "../../styles/COLORS.css";
-@import url("https://fonts.googleapis.com/css2?family=Mate+SC&family=Urbanist:wght@700&display=swap");
 
 .home {
   display: flex;
@@ -12,6 +11,7 @@
   background-size: cover;
   background-position-y: 40%;
   padding-bottom: 3%;
+  border-radius: 0 0 10px 10px;
 }
 
 .headshotContainer {
@@ -37,7 +37,6 @@
 }
 
 .text {
-  font-family: "Mate SC", serif;
   font-weight: bold;
   font-size: 2.7vw;
   color: rgb(40, 36, 36);
@@ -51,15 +50,23 @@
 
 .serviceCardContainer {
   display: flex;
-  flex-direction: row;
-  /* justify-content: flex-end; */
-  height: 100%;
   padding: 5%;
+  margin-left: 10%;
+}
+
+@media screen and (max-width: 900px) {
+  .text {
+    font-size: 2.9vw;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .home {
     flex-direction: column;
+  }
+  .homeBanner{
+    padding-bottom: 1%;
+    margin-bottom: 3%;
   }
   .headshotContainer {
     width: 100%;
@@ -85,7 +92,6 @@
   .serviceCardContainer {
     flex-direction: column;
     align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 9%;
   }
 }
