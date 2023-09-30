@@ -31,9 +31,9 @@ function Home() {
           >
             <ServiceCard 
             serviceLink= {data.serviceLink}
-            cardIcon= {data.cardIcon}
+            // cardIcon= {data.cardIcon}
             cardTitle= {data.cardTitle}
-            cardText= {data.cardText}
+            // cardText= {data.cardText}
             /> 
           </Grid>
           <Grid item xs={12} sm={6} md={8} key={data.serviceTitle} sx={{

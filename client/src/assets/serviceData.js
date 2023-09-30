@@ -1,12 +1,7 @@
-import serviceIcons from "./images/serviceIcons/index.js";
-// import serviceImages from "./images/serviceImages/index.js";
-
 const serviceData = [
   {
     //ServiceCard props
-    cardIcon: serviceIcons.hiringIcon,
     cardTitle: "Talent, People Operations & Culture",
-    cardText: "Click to learn more",
     //ServiceDescription propsServiceDescription props
     serviceTitle: "Create the right team and culture",
     serviceText:
@@ -16,12 +11,16 @@ const serviceData = [
     serviceLinkTab: "Talent & Culture",
     //App props
     servicePage: "<TalentCulture />",
+    //ServicePage props
+    // servicePageTitle: "",
+    // servicePageImage: "",
+    // servicePageImgAlt: "",
+    // servicePageText: "",
+    // servicePageBullets: "",
   },
   {
     //ServiceCard props
-    cardIcon: serviceIcons.developmentIcon,
     cardTitle: "People Management & Development",
-    cardText: "Click to learn more",
     //ServiceDescription props
     serviceTitle: "Manage and develop your people",
     serviceText:
@@ -40,9 +39,7 @@ const serviceData = [
   },
   {
     //ServiceCard props
-    cardIcon: serviceIcons.complianceIcon,
     cardTitle: "Financial & Compliance Management",
-    cardText: "Click here for more",
     //ServiceDescription props
     serviceTitle: "Take control of your finances",
     serviceText:
@@ -61,9 +58,7 @@ const serviceData = [
   },
   {
     //ServiceCard props
-    cardIcon: serviceIcons.innovationIcon,
     cardTitle: "Special Projects & Innovation",
-    cardText: "Click here for more",
     //ServiceDescription props
     serviceTitle: "Develop new initiatives",
     serviceText:
@@ -82,9 +77,7 @@ const serviceData = [
   },
   {
     //ServiceCard props
-    cardIcon: serviceIcons.strategyIcon,
     cardTitle: "Strategic Planning and Enterprise Support",
-    cardText: "Click here for more",
     //ServiceDescription props
     serviceTitle: "Prepare for the future",
     serviceText:
@@ -103,9 +96,7 @@ const serviceData = [
   },
   {
     //ServiceCard props
-    cardIcon: serviceIcons.managementIcon,
     cardTitle: "Board Management & Governance",
-    cardText: "Click here for more",
     //ServiceDescription props
     serviceTitle: "Do more with your board",
     serviceText: "We help you manage your board.",
