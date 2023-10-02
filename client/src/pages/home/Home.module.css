@@ -27,18 +27,12 @@
 }
 
 .text {
-  /* font-weight: bold; */
+  text-align: center;
   font-size: 2.5vw;
   color: rgb(71, 65, 65);
   padding-left: 10%;
   padding-right: 10%;
   margin-bottom: 0;
-}
-
-.serviceCardContainer {
-  display: flex;
-  padding: 5%;
-  margin-left: 10%;
 }
 
 @media screen and (max-width: 900px) {
@@ -63,14 +57,10 @@
     width: 50%;
     margin: 5%;
   }
-  .textContainer {
-    width: 100%;
-    align-items: center;
-  }
   .text {
     font-size: 4.1vw;
     width: 100%;
-    text-align: center;
+    text-align: left;
     padding-left: 7%;
     padding-right: 7%;
     padding-bottom: 5%;
@@ -79,6 +69,6 @@
   .serviceCardContainer {
     flex-direction: column;
     align-items: center;
-    padding-left: 9%;
+    /* padding-left: 9%; */
   }
 }

@@ -25,7 +25,9 @@ import {
 function App() {
   return (
     <Router>
-      <Container maxWidth="false" className={styles.App}>
+      <Container maxWidth="false" className={styles.App} sx={{
+        padding: "0",
+      }}>
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
