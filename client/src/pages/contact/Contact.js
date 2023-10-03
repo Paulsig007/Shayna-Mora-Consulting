@@ -9,7 +9,7 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm("service_xoptlf6", "template_dvg0ptr", form.current, "Z9H-fpcVpqK5dqCqm")
+    emailjs.sendForm("service_xoptlf6", "contact_form", form.current, "Z9H-fpcVpqK5dqCqm")
       .then(
         form.current.reset(),
         (result) => {
