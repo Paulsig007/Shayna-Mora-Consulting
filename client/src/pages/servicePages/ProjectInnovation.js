@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid";
 import styles from "./servicePage.module.css"
 
 import innovationImg from "../../assets/images/serviceImages/innovation.jpg";
-import ElEdLogo from "../../assets/images/orgLogos/ElEdLogo.jpeg";
+import SchustermanLogo from "../../assets/images/orgLogos/Schusterman-Logo.png";
 
 function ProjectInnovation() {
   const servicePageBullets = [
@@ -55,8 +55,8 @@ function ProjectInnovation() {
         <p className={styles.relevantCompaniesTitle}>
         Partnership Spotlight:
         </p>
-        <a href="https://eleducation.org/" target="_blank" rel="noreferrer" className={styles.companyATag}>
-        <img src={ElEdLogo} alt="ColeaguePartners Logo" className={styles.ElEdLogo} />
+        <a href="https://www.schusterman.org/" target="_blank" rel="noreferrer" className={styles.companyATag}>
+        <img src={SchustermanLogo} alt="Schusterman Logo" className={styles.SchustermanLogo} />
         </a>
       </Grid>
     </Grid>

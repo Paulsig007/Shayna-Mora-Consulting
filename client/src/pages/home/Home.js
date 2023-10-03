@@ -12,7 +12,7 @@ function Home() {
     <Grid container className={styles.home}>
       <Grid container className={styles.homeBanner}>
         <Grid item xs={6} sm={6} className={styles.textContainer}>
-          <p className={styles.text}>Enhancing organizational capacity through strategic leadership in operations and human resources management</p>
+          <p className={styles.text}> Maximizing capacity through strategic operating and human resources leadership.</p>
         </Grid>
       </Grid>
       <Grid container spacing={3} className={styles.serviceCardContainer} sx={{

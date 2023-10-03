@@ -64,10 +64,9 @@
   margin-bottom: 3%;
 }
 
-.ElEdLogo{
-  width: 10%;
+.SchustermanLogo{
+  width: 15%;
   margin-bottom: 3%;
-  box-shadow: 1px 1px 5px 1px #888888;
 }
 
 .IACLogo{
@@ -148,8 +147,8 @@
     width: 150px;
   }
   
-  .ElEdLogo{
-    width: 85px;
+  .SchustermanLogo{
+    width: 150px;
   }
   
   .IACLogo{
