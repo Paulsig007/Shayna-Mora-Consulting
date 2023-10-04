@@ -21,6 +21,13 @@ function Contact() {
       );
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <Grid
       container
@@ -70,7 +77,14 @@ function Contact() {
           />
         </Grid>
         <Grid item sm={12}>
-          <input type="submit" value="Send" />
+          <input 
+            type="submit" 
+            value="Send" 
+            onClick={() =>
+              {
+                scrollToTop(); 
+              }}
+          />
         </Grid>
       </form>
     </Grid>
