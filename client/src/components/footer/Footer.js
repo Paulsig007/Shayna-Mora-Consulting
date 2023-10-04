@@ -1,5 +1,4 @@
 import React from "react";
-import { useEffect, useState } from "react";
 import Grid from "@mui/material/Grid";
 import {Link} from "react-router-dom";
 import styles from "./Footer.module.css";
@@ -8,19 +7,6 @@ import moraLogo from "../../assets/images/moraImages/mora-consulting-logo.png";
 import serviceData from "../../assets/serviceData";
 
 function Footer() {
-  const [scroll, setScroll] = useState(0);
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => 
-    window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const handleScroll = () => {
-    const position = window.scrollY;
-    setScroll(position);
-  };
-
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -93,7 +79,6 @@ function Footer() {
               className={styles.footerLink} 
               onClick={() => 
               {
-                handleScroll(); 
                 scrollToTop();
               }}>
                 {data.tab}
@@ -122,7 +107,6 @@ function Footer() {
                 className={styles.footerLink} 
                 onClick={() => 
                   {
-                    handleScroll(); 
                     scrollToTop();
                   }}
                 >{data.serviceLinkTab}</Link>
