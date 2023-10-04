@@ -1,5 +1,5 @@
-
 import React from "react";
+import { useEffect, useState } from "react";
 import Grid from "@mui/material/Grid";
 import {Link} from "react-router-dom";
 import styles from "./Footer.module.css";
@@ -8,6 +8,26 @@ import moraLogo from "../../assets/images/moraImages/mora-consulting-logo.png";
 import serviceData from "../../assets/serviceData";
 
 function Footer() {
+  const [scroll, setScroll] = useState(0);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => 
+    window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const handleScroll = () => {
+    const position = window.scrollY;
+    setScroll(position);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   const siteNavigation = [
     {
       link: "/",
@@ -68,7 +88,16 @@ function Footer() {
           {siteNavigation.map((data) => (
           <ul key={data.link} className={styles.footerLinkList}>
             <li>
-              <Link to ={data.link} className={styles.footerLink}>{data.tab}</Link>
+              <Link 
+              to ={data.link} 
+              className={styles.footerLink} 
+              onClick={() => 
+              {
+                handleScroll(); 
+                scrollToTop();
+              }}>
+                {data.tab}
+              </Link>
             </li>
           </ul>
           ))  
@@ -88,7 +117,15 @@ function Footer() {
           {serviceData.map((data) => (
           <ul key={data.serviceLink} className={styles.footerLinkList}>
             <li>
-              <Link to ={data.serviceLink} className={styles.footerLink}>{data.serviceLinkTab}</Link>
+              <Link 
+                to ={data.serviceLink} 
+                className={styles.footerLink} 
+                onClick={() => 
+                  {
+                    handleScroll(); 
+                    scrollToTop();
+                  }}
+                >{data.serviceLinkTab}</Link>
             </li>
           </ul>
           ))}
@@ -100,4 +137,5 @@ function Footer() {
     export default Footer;
     
     
+   
    

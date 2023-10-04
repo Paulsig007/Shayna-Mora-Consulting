@@ -18,13 +18,13 @@ form {
 .conLabel {
   margin-top: 1%;
   color: rgb(75, 75, 75);
-  font-size: 2vw;
+  font-size: 1.7vw;
 }
 
 input[type="text"],
 input[type="email"],
 select {
-  font-size: 2vw;
+  font-size: 1.3vw;
   width: 90%;
   padding: 1%;
   margin: 1%;
@@ -35,9 +35,9 @@ select {
 }
 
 textarea {
-  font-size: 2vw;
+  font-size: 1.3vw;
   width: 90%;
-  height: 150px;
+  height: 250px;
   padding: 1%;
   margin: 1%;
   border: 1px solid #ccc;
@@ -59,7 +59,7 @@ input[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
   box-shadow: 3px 3px 5px #20201f;
-  margin-bottom: 50%;
+  margin-bottom: 70%;
 }
 
 input[type="submit"]:hover {

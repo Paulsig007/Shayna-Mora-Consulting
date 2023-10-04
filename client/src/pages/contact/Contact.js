@@ -52,13 +52,13 @@ function Contact() {
           <label className={styles.conLabel}>Name</label>
         </Grid>
         <Grid item sm={12}>
-          <input type="text" name="user_name" placeholder="Name" />
+          <input type="text" name="from_name" placeholder="Name" />
         </Grid>
         <Grid item sm={12}>
           <label className={styles.conLabel}>Email</label>
         </Grid>
         <Grid item sm={12}>
-          <input type="email" name="user_email" placeholder="Email" />
+          <input type="email" name="from_email" placeholder="Email" />
         </Grid>
         <Grid item sm={12}>
           <label className={styles.conLabel}>Message</label>

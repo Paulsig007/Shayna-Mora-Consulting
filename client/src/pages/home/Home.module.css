@@ -7,14 +7,15 @@
 }
 
 .homeBanner {
-  background: url("../../assets/images/backgroundImages/frond-background.jpg");
+  background: url("../../assets/images/backgroundImages/BannerPic.jpg");
   background-size: 75%;
   background-repeat: no-repeat;
-  background-position-y: 70%;
+  background-position-y: 40%;
   background-position-x: 100%;
   padding-bottom: 3%;
   border-radius: 0 0 10px 10px;
-  background-color: #f9f9f7;
+  background-color:#ebecef;
+  /* background-image: linear-gradient(#ebecef, #dee2e7);  */
   box-shadow: 1px 1px 8px rgb(81, 79, 79);
 }
 

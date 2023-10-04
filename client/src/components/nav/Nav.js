@@ -9,6 +9,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import data from "../../assets/serviceData";
 
+
 function Nav() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -39,7 +40,7 @@ function Nav() {
           </Link>
           <Button
             sx={{
-              // fontWeight: "bold",
+              fontFamily: "'Prompt', sans-serif",
               fontSize: "100%",
               textDecoration: "underline",
               color: "rgb(75, 75, 75)",
