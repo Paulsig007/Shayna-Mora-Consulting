@@ -30,7 +30,7 @@ function Footer() {
   ];
   const socialMedia = [
     {
-      social: "https://www.linkedin.com/in/shayna-mora-80316726b/",
+      social: "https://www.linkedin.com/in/shaynamora/",
       tab: "LinkedIn"
     },
     {
