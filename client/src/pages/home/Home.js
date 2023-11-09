@@ -24,7 +24,7 @@ function Home() {
         // padding: "2%",
       }}>
         {serviceData.map((data) => (
-        <Grid container sx={{
+        <Grid container key={data.cardTitle} sx={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -32,7 +32,7 @@ function Home() {
           marginRight: "2%",
         }}
         >
-          <Grid item xs={12} sm={6} md={4}  key={data.cardTitle} sx={{
+          <Grid item xs={12} sm={6} md={4} sx={{
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
