@@ -36,7 +36,7 @@ function About() {
         }}
       >
         <p className={styles.aboutText}>
-          With over 16 years of distinguished experience in education and
+          With over 17 years of distinguished experience in education and
           non-profit administration, Shayna Mora excels as a human capital
           leader, blending sharp project management skills with an innate
           determination to achieve. A strategic visionary, Shayna's extensive

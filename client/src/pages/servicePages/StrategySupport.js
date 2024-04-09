@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid";
 import styles from "./servicePage.module.css"
 
 import strategicPlanningImg from "../../assets/images/serviceImages/strategic-planning.jpg";
-import IACLogo from "../../assets/images/orgLogos/IACLogo.jpg";
+import mindworkslogo from "../../assets/images/orgLogos/mindworkslogo.png";
 
 function StrategySupport() {
   const servicePageBullets = [
@@ -55,8 +55,8 @@ function StrategySupport() {
         <p className={styles.relevantCompaniesTitle}>
         Partnership Spotlight:
         </p>
-        <a href="https://www.indianag.org/" target="_blank" rel="noreferrer" className={styles.companyATag}>
-        <img src={IACLogo} alt="ColeaguePartners Logo" className={styles.IACLogo} />
+        <a href="https://mindworkscollab.org/our-people/" target="_blank" rel="noreferrer" className={styles.companyATag}>
+        <img src={mindworkslogo} alt="ColeaguePartners Logo" className={styles.mindworkslogo} />
         </a>
       </Grid>
     </Grid>
