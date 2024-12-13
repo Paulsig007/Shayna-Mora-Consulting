@@ -104,6 +104,9 @@ function Footer() {
           </nav>
         </Grid>
       </Grid>
+      <div className={styles.copyright}>
+        © {new Date().getFullYear()} MORA CONSULTING. All rights reserved.
+      </div>
     </footer>
   );
 }
