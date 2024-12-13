@@ -3,66 +3,74 @@ import styles from "./Home.module.css";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import ServiceCard from "../../components/serviceCard/ServiceCard";
-import serviceData from "../../assets/serviceData";
 import ServiceDescription from "../../components/serviceDescription/ServiceDescription";
+import serviceData from "../../assets/serviceData";
 
 function Home() {
   return (
-  <Box className={styles.home}>
-    <Grid container className={styles.home}>
-      <Grid container className={styles.homeBanner}>
-        <Grid item xs={6} sm={6} className={styles.textContainer}>
-          <p className={styles.text}> Maximizing capacity through strategic operating and human resources leadership.</p>
-        </Grid>
-      </Grid>
-      <Grid container spacing={3} className={styles.serviceCardContainer} sx={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        margin: "0",
-        padding: "0",
-        // padding: "2%",
-      }}>
-        {serviceData.map((data) => (
-        <Grid container key={data.cardTitle} sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          marginLeft: "2%",
-          marginRight: "2%",
-        }}
-        >
-          <Grid item xs={12} sm={6} md={4} sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            marginBottom: "2%",
-            marginTop: "2%",
-            }}
+    <Box component="main" className={styles.home}>
+      <Grid container>
+        {/* Hero Banner */}
+        <Grid container component="section" className={styles.homeBanner}>
+          <Grid 
+            item 
+            xs={12} 
+            sm={6} 
+            className={styles.textContainer}
           >
-            <ServiceCard 
-            serviceLink= {data.serviceLink}
-            cardTitle= {data.cardTitle}
-            /> 
-          </Grid>
-          <Grid item xs={12} sm={6} md={8} key={data.serviceTitle} sx={{
-            display: "flex",
-            justifyContent: "flex-start",
-            alignItems: "center",
-            marginBottom: "2%",
-            paddingLeft: "10%",
-          }}>
-            <ServiceDescription
-              serviceTitle= {data.serviceTitle}
-              serviceText= {data.serviceText}
-            />
+            <p className={styles.heroText}>
+              Empowering mission-driven nonprofits and social impact organizations 
+              to thrive with operationally strategic, people-centered leadership
+            </p>
           </Grid>
         </Grid>
+
+        {/* Services Section */}
+        <Grid 
+          container 
+          component="section" 
+          spacing={3} 
+          className={styles.servicesSection}
+        >
+          {serviceData.map((service) => (
+            <Grid 
+              container 
+              key={service.cardTitle} 
+              className={styles.serviceRow}
+            >
+              {/* Service Card */}
+              <Grid 
+                item 
+                xs={12} 
+                sm={6} 
+                md={4} 
+                className={styles.serviceCardWrapper}
+              >
+                <ServiceCard 
+                  serviceLink={service.serviceLink}
+                  cardTitle={service.cardTitle}
+                /> 
+              </Grid>
+
+              {/* Service Description */}
+              <Grid 
+                item 
+                xs={12} 
+                sm={6} 
+                md={8} 
+                className={styles.serviceDescriptionWrapper}
+              >
+                <ServiceDescription
+                  serviceTitle={service.serviceTitle}
+                  serviceText={service.serviceText}
+                />
+              </Grid>
+            </Grid>
           ))}
+        </Grid>
       </Grid>
-    </Grid>
-  </Box>
-    );
+    </Box>
+  );
 }
 
 export default Home;

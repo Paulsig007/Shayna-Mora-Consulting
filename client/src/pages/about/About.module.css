@@ -1,102 +1,197 @@
+.aboutPage {
+  padding: 2rem 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Profile Section Styles */
+.profileSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
 .headshot {
-  width: 46%;
-  border-radius: 10%;
-  margin-top: 10%;
-  box-shadow: 3px 3px 3px black;
+  width: 70%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+  display: block;
 }
 
 .aboutTitle {
-  font-size: 4vw;
-  font-weight: bold;
+  font-size: 2.25rem;
+  font-weight: 700;
   color: rgb(75, 75, 75);
-}
-
-.resume {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.resumeIcon {
-  width: 20%;
-  box-shadow: 0px 0px 3px black;
-}
-
-.bottomResume {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 5%;
-}
-
-.bottomResumeIcon {
+  margin: 0 auto;
   text-align: center;
-  width: 20%;
-  box-shadow: 0px 0px 3px black;
+  width: 100%;
+  display: block;
+  padding: 0 1rem;
 }
 
-.bottomResumeText {
-  font-size: 20px;
-  font-weight: bold;
+/* Bio Section Styles */
+.bioSection {
+  padding: 2rem;
+}
+
+.aboutContent {
+  max-width: 800px;
+}
+
+.leadText {
+  font-size: 1.5rem;
+  line-height: 1.4;
   color: rgb(75, 75, 75);
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: rgb(75, 75, 75);
+  margin: 2rem 0 1rem;
 }
 
 .aboutText {
-  font-size: 24px;
+  font-size: 1.125rem;
+  line-height: 1.6;
   color: rgb(75, 75, 75);
+  margin-bottom: 1.5rem;
 }
 
+/* Responsive Styles */
 @media screen and (max-width: 1200px) {
-  .headshot {
-    width: 30%;
-    margin: 2% 0 0 0;
+  .bioSection {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
   }
 
-  .titleContainer {
-    align-items: center;
+  .aboutContent {
+    max-width: 700px;
+    text-align: left;
+  }
+
+  .headshot {
+    width: 60%;
+    margin-bottom: 1.5rem;
   }
 
   .aboutTitle {
-    font-size: 5vw;
-    margin-top: 2%;
-    margin-bottom: 0;
+    font-size: 2rem;
+  }
+
+  .leadText {
+    font-size: 1.375rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
   }
 
   .aboutText {
-    font-size: 22px;
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 900px) {
+  .profileSection {
+    padding: 1.5rem 1rem;
+  }
+
   .headshot {
-    width: 35%;
+    width: 50%;
   }
 
   .aboutTitle {
-    font-size: 5.5vw;
+    font-size: 1.75rem;
+  }
+
+  .bioSection {
+    padding: 1.5rem;
+  }
+
+  .aboutContent {
+    max-width: 600px;
+  }
+
+  .leadText {
+    font-size: 1.25rem;
   }
 
   .aboutText {
-    font-size: 18px;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
   }
 }
 
 @media screen and (max-width: 600px) {
+  .aboutPage {
+    padding: 1rem 0.5rem;
+  }
+
+  .profileSection {
+    padding: 1rem 0.5rem;
+  }
+
   .headshot {
-    width: 45%;
-    margin: 4% 0 0 0;
+    width: 60%;
+    margin-bottom: 1rem;
   }
 
   .aboutTitle {
-    font-size: 8vw;
+    font-size: 1.5rem;
+  }
+
+  .bioSection {
+    padding: 1rem 0.5rem;
+  }
+
+  .aboutContent {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .leadText {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.25rem;
+    margin: 1.5rem 0 1rem;
   }
 
   .aboutText {
-    font-size: 14px;
-    text-align: justify;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
   }
-  .bottomResumeText {
-    font-size: 18px;
-    font-weight: bold;
+}
+
+/* Larger screens */
+@media screen and (min-width: 1400px) {
+  .headshot {
+    width: 60%;
+  }
+
+  .aboutTitle {
+    font-size: 2.5rem;
+  }
+
+  .leadText {
+    font-size: 1.75rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .aboutText {
+    font-size: 1.25rem;
   }
 }

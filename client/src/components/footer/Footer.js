@@ -1,9 +1,8 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import styles from "./Footer.module.css";
 import moraLogo from "../../assets/images/moraImages/mora-consulting-logo.png";
-
 import serviceData from "../../assets/serviceData";
 
 function Footer() {
@@ -15,111 +14,98 @@ function Footer() {
   };
 
   const siteNavigation = [
-    {
-      link: "/",
-      tab: "Home",
-    },
-    {
-      link: "/about",
-      tab: "About",
-    },
-    {
-      link: "/contact",
-      tab: "Contact",
-    }
+    { link: "/", tab: "Home" },
+    { link: "/about", tab: "About" },
+    { link: "/contact", tab: "Contact" }
   ];
+
   const socialMedia = [
-    {
-      social: "https://www.linkedin.com/in/shaynamora/",
-      tab: "LinkedIn"
-    },
-    {
-      social: "https://calendly.com/shaynamora",
-      tab: "Schedule a Call"
-    }
+    { social: "https://www.linkedin.com/in/shaynamora/", tab: "LinkedIn" },
+    { social: "https://calendly.com/shaynamora", tab: "Schedule a Call" }
   ];
 
   return (
-    <Grid container sx={{
-      backgroundColor: "#f1f1ef",
-      paddingBottom: "10%",
-      paddingTop: "1%",
-      paddingLeft: "1%",
-      paddingRight: "1%",
-      '@media screen and (max-width: 900px)': {
-        padding: "3%",
-        paddingTop: "1%",
-      },
-    }}>
-        <Grid item sm={12} md={6} sx={{
-          display: "flex",
-          flexDirection: "column",
-          paddingTop: "1%",
-          paddingLeft: "1%",
-          '@media screen and (max-width: 900px)': {
-            display: "flex",
-            alignItems: "center",
-          },
-        }}>
-          <img src={moraLogo} alt="Mora Consulting Logo"className={styles.footerLogo}/>
+    <footer className={styles.footer}>
+      <Grid container spacing={2}>
+        <Grid 
+          item 
+          xs={12} 
+          lg={6} 
+          className={styles.logoContainer}
+        >
+          <img 
+            src={moraLogo} 
+            alt="Mora Consulting Logo" 
+            className={styles.footerLogo}
+          />
         </Grid>
-        <Grid item xs={6} sm={6} md={3} sx={{
-          display: "flex",
-          flexDirection: "column",
-          marginBottom: "10",
-        }}>
-          <h1 className={styles.footerLinkTitle}>
+        
+        <Grid 
+          item 
+          xs={6} 
+          lg={3} 
+          className={styles.linkSection}
+        >
+          <h2 className={styles.footerHeading}>
             Shayna
-          </h1>
-          {siteNavigation.map((data) => (
-          <ul key={data.link} className={styles.footerLinkList}>
-            <li>
-              <Link 
-              to ={data.link} 
-              className={styles.footerLink} 
-              onClick={() => 
-              {
-                scrollToTop();
-              }}>
-                {data.tab}
-              </Link>
-            </li>
-          </ul>
-          ))  
-          }
-          {socialMedia.map((data) => (
-            <ul key={data.social} className={styles.footerLinkList}>
-            <li>
-              <a href={data.social} target="_blank" rel="noreferrer" className={styles.footerLink}>{data.tab}</a>
-            </li>
-          </ul>
-          ))}
+          </h2>
+          <nav>
+            <ul className={styles.footerLinkList}>
+              {siteNavigation.map((data) => (
+                <li key={data.link}>
+                  <Link
+                    to={data.link}
+                    className={styles.footerLink}
+                    onClick={scrollToTop}
+                  >
+                    {data.tab}
+                  </Link>
+                </li>
+              ))}
+              {socialMedia.map((data) => (
+                <li key={data.social}>
+                  <a 
+                    href={data.social} 
+                    target="_blank" 
+                    rel="noreferrer" 
+                    className={styles.footerLink}
+                  >
+                    {data.tab}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </Grid>
-        <Grid item xs={6} sm={6} md={3}>
-          <h1 className={styles.footerServicesTitle}>
-            Services
-          </h1>
-          {serviceData.map((data) => (
-          <ul key={data.serviceLink} className={styles.footerLinkList}>
-            <li>
-              <Link 
-                to ={data.serviceLink} 
-                className={styles.footerLink} 
-                onClick={() => 
-                  {
-                    scrollToTop();
-                  }}
-                >{data.serviceLinkTab}</Link>
-            </li>
-          </ul>
-          ))}
-      </Grid>
-    </Grid>
-    );
-    }
 
-    export default Footer;
-    
-    
-   
-   
+        <Grid 
+          item 
+          xs={6} 
+          lg={3} 
+          className={styles.linkSection}
+        >
+          <h2 className={styles.footerHeading}>
+            Services
+          </h2>
+          <nav>
+            <ul className={styles.footerLinkList}>
+              {serviceData.map((data) => (
+                <li key={data.serviceLink}>
+                  <Link
+                    to={data.serviceLink}
+                    className={styles.footerLink}
+                    onClick={scrollToTop}
+                  >
+                    {data.serviceLinkTab}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </Grid>
+      </Grid>
+    </footer>
+  );
+}
+
+export default Footer;

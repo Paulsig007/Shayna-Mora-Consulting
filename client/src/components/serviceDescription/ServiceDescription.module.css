@@ -1,42 +1,39 @@
-.serviceDescription{
-    height: 100%;
+.serviceDescription {
+  width: 100%;
 }
 
-.serviceTitle{
-    font-size: 2.5vw;
-    font-weight: 600;
-    /* margin-bottom: 0.5rem; */
-    color: rgb(75, 75, 75);
-    /* text-align: center; */
-    text-transform: capitalize;
-    margin-bottom: 0;
-   
-    }
-    .serviceText{
-        font-size: 1.7vw;
-        font-weight: 400;
-        color: rgb(75, 75, 75);
-        margin-top: 2%;
-    }
+.serviceTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(75, 75, 75);
+  margin: 0 0 1rem 0;
+}
 
-    @media screen and (max-width: 900px) {
-        .serviceTitle{
-            margin-top: 3%;
-            font-size: 3vw;
-            margin-bottom: 1%;
-        }
-        .serviceText{
-            font-size: 2.1vw;
-            margin-bottom: 3%;
-        }
-    }
+.serviceText {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: rgb(75, 75, 75);
+  margin: 0;
+}
 
-    @media screen and (max-width: 600px) {
-        .serviceTitle{
-            font-size: 4vw;
-            /* text-align: center; */
-        }
-        .serviceText{
-            font-size: 2.8vw;
-        }
-    }
+@media screen and (max-width: 900px) {
+  .serviceTitle {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .serviceText {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .serviceTitle {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .serviceText {
+    font-size: 0.9375rem;
+  }
+}

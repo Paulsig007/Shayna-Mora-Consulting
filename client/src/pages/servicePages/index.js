@@ -1,15 +1,15 @@
 import BoardGovernance from "./BoardGovernance";
-import FinancialCompliance from "./FinancialCompliance";
-import MgmtDevelopment from "./MgmtDevelopment";
-import ProjectInnovation from "./ProjectInnovation";
+import LeadershipDevelopment from "./LeadershipDevelopment";
+import ChangeManagement from "./ChangeManagement";
+import ComprehensiveConsulting from "./ComprehensiveConsulting";
 import StrategySupport from "./StrategySupport";
-import TalentCulture from "./TalentCulture";
+import FractionalLeadership from "./FractionalLeadership";
 
 export {
   BoardGovernance,
-  FinancialCompliance,
-  MgmtDevelopment,
-  ProjectInnovation,
+  LeadershipDevelopment,
+  ChangeManagement,
+  ComprehensiveConsulting,
   StrategySupport,
-  TalentCulture,
+  FractionalLeadership,
 };

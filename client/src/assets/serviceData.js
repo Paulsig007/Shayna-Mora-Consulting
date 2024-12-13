@@ -1,16 +1,16 @@
 const serviceData = [
   {
     //ServiceCard props
-    cardTitle: "Talent, People Operations & Culture",
+    cardTitle: "Fractional Executive Leadership & Organizational Strategy",
     //ServiceDescription propsServiceDescription props
-    serviceTitle: "Create the right team and culture",
+    serviceTitle: "Achieve high-impact leadership",
     serviceText:
-      "We help you find the right people, and build the right culture.",
+      "We provide fractional executive leadership and guide your strategy for sustainable growth.",
     //Nav props
-    serviceLink: "/talent-culture",
-    serviceLinkTab: "Talent & Culture",
+    serviceLink: "/fractional-executive-leadership-and-organizational-strategy",
+    serviceLinkTab: "Leadership and Organizational Strategy",
     //App props
-    servicePage: "<TalentCulture />",
+    servicePage: "<FractionalLeadership />",
     //ServicePage props
     // servicePageTitle: "",
     // servicePageImage: "",
@@ -20,16 +20,16 @@ const serviceData = [
   },
   {
     //ServiceCard props
-    cardTitle: "People Management & Development",
+    cardTitle: "Change Management & Culture Transformation",
     //ServiceDescription props
-    serviceTitle: "Manage and develop your people",
+    serviceTitle: "Build a resilient culture",
     serviceText:
-      "We help you develop your people, and build a diverse, equitable, and inclusive organization.",
+      "We help you navigate change and create a culture aligned with your mission and financial goals.",
     //Nav Props
-    serviceLink: "/mgmt-development",
-    serviceLinkTab: "Management & Development",
+    serviceLink: "/change-management-and-culture-transformation",
+    serviceLinkTab: "Change Management and Culture Transformation",
     //App props
-    servicePage: "<MgmtDevelopment/>",
+    servicePage: "<ChangeManagement/>",
     //ServicePage props
     // servicePageTitle: "",
     // servicePageImage: "",
@@ -39,16 +39,16 @@ const serviceData = [
   },
   {
     //ServiceCard props
-    cardTitle: "Financial & Compliance Management",
+    cardTitle: "Leadership Development and People Operations",
     //ServiceDescription props
-    serviceTitle: "Take control of your finances",
+    serviceTitle: "Empower your leaders and teams",
     serviceText:
-      "We help you manage your finances, and ensure compliance with all applicable laws and regulations.",
+      "We support leadership growth, optimize people operations, and strengthen organizational culture.",
     //Nav Props
-    serviceLink: "/financial-compliance",
-    serviceLinkTab: "Financial Compliance",
+    serviceLink: "/leadership-development-and-people-operations",
+    serviceLinkTab: "Leadership Development and People Operations",
     //App props
-    servicePage: "<FinancialCompliance />",
+    servicePage: "<LeadershipDevelopment />",
     //ServicePage props
     // servicePageTitle: "",
     // servicePageImage: "",
@@ -58,53 +58,16 @@ const serviceData = [
   },
   {
     //ServiceCard props
-    cardTitle: "Special Projects & Innovation",
+    cardTitle: "Comprehensive Consulting & Networked Solutions",
     //ServiceDescription props
-    serviceTitle: "Develop new initiatives",
+    serviceTitle: "Access tailored expertise",
     serviceText:
-      "We help you launch new initiatives, and manage special projects.",
+      "We assemble specialized consulting teams to tackle complex challenges and drive your mission forward.",
     //Nav Props
-    serviceLink: "/projects-innovation",
-    serviceLinkTab: "Projects & Innovation",
+    serviceLink: "/comprehensive-consulting-and-networked-solutions",
+    serviceLinkTab: "Comprehensive Consulting & Networked Solutions",
     //App props
-    servicePage: "<ProjectInnovation />",
-    //ServicePage props
-    // servicePageTitle: "",
-    // servicePageImage: "",
-    // servicePageImgAlt: "",
-    // servicePageText: "",
-    // servicePageBullets: "",
-  },
-  {
-    //ServiceCard props
-    cardTitle: "Strategic Planning and Enterprise Support",
-    //ServiceDescription props
-    serviceTitle: "Prepare for the future",
-    serviceText:
-      "We help you develop your strategy, and provide enterprise level support.",
-    //Nav Props
-    serviceLink: "/strategy-support",
-    serviceLinkTab: "Strategy & Enterprise Support",
-    //App props
-    servicePage: "<StrategySupport />",
-    //ServicePage props
-    // servicePageTitle: "",
-    // servicePageImage: "",
-    // servicePageImgAlt: "",
-    // servicePageText: "",
-    // servicePageBullets: "",
-  },
-  {
-    //ServiceCard props
-    cardTitle: "Board Management & Governance",
-    //ServiceDescription props
-    serviceTitle: "Do more with your board",
-    serviceText: "We help you manage your board.",
-    //Nav Props
-    serviceLink: "/board-governance",
-    serviceLinkTab: "Board Management & Governance",
-    //App props
-    servicePage: "<BoardGovernance />",
+    servicePage: "<ComprehensiveConsulting />",
     //ServicePage props
     // servicePageTitle: "",
     // servicePageImage: "",

@@ -1,63 +1,93 @@
-.servicePageTitle{
+/* Service Page Specific Styles */
+.servicePageTitle {
   text-align: center;
   color: rgb(75, 75, 75);
-  font-size: 2.5vw;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .servicePageImage {
   width: 80%;
   margin-left: 10%;
   border-radius: 50% 25% / 25% 40%;
-  box-shadow: 1px 1px 10px 1px #888888;
+  box-shadow: 0 4px 12px rgba(136, 136, 136, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.servicePageImage:hover {
+  transform: scale(1.02);
 }
 
 .servicePageText {
   width: 85%;
   color: rgb(75, 75, 75);
-  margin-left: 5%;
-  margin-top: 2%;
-  font-size: 1.5vw;
+  margin: 2rem 5%;
+  font-size: 1.125rem;
   text-align: left;
+  line-height: 1.6;
+  max-width: 700px;
 }
 
-.servicePageBulletsTitle{
+.servicePageBulletsTitle {
   text-align: center;
   color: rgb(75, 75, 75);
-  font-size: 2.5vw;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
 }
 
-.servicePageBullets{
+.servicePageBullets {
   width: 80%;
+  max-width: 700px;
   color: rgb(75, 75, 75);
-  margin: 2% 0 0% 10%;
-  font-size: 1.5vw;
+  margin: 1rem 10%;
+  font-size: 1.125rem;
   text-align: left;
-
+  line-height: 1.5;
 }
 
-.relevantCompaniesTitle{
+.relevantCompaniesTitle {
   text-align: center;
   color: rgb(75, 75, 75);
-  font-size: 2.5vw;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 3rem 0 2rem;
 }
 
-.companyATag{
+.companyATag {
   display: flex;
   justify-content: center;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.companyATag:hover {
+  opacity: 0.85;
 }
 
 /*=== Org Logos === */
 
-.talentHopeboundLogo{
-  width: 20%;
-  margin-top: -1%;
-  margin-bottom: 4%;
+.vChiefLogo,
+.coleagueLogo {
+  max-width: 180px;
+  width: 17%;
+  margin-bottom: 2rem;
+  transition: transform 0.2s ease;
 }
 
-.coleagueLogo{
-  width: 20%;
-  margin-bottom: 3%;
+.vChiefLogo:hover,
+.coleagueLogo:hover {
+  transform: translateY(-2px);
 }
+
+/* .coleagueLogo{
+  width: 17%;
+  margin-bottom: 3%;
+} */
 
 .TFALogo{
   width: 20%;
@@ -77,71 +107,76 @@
   box-shadow: 0px 0px 3px 1px #888888;
 }
 
-.vChiefLogo{
+/* .vChiefLogo{
+  width: 17%;
+  margin-top: -1%;
+  margin-bottom: 4%;
+} */
+
+.obranLogo{
   width: 15%;
   margin-top: -1%;
   margin-bottom: 4%;
 }
 
+.aerdfLogo{
+  width: 15%;
+  margin-top: -1%;
+  margin-bottom: 4%;
+}
+
+.CanopyLogo{
+  width: 20%;
+  margin-top: -1%;
+  margin-bottom: 4%;
+}
+
+.catalystEdLogo{
+  width: 20%;
+  margin-top: -1%;
+  margin-bottom: 4%;
+}
+
 @media screen and (max-width: 1200px) {
-  .servicePageTitle{
-    font-size: 3.5vw;
-  }
-  
-  .servicePageText {
-    font-size: 1.8vw;
+  .servicePageTitle {
+    font-size: 1.75rem;
   }
 
-  .servicePageBulletsTitle{
-    font-size: 3vw;
+  .servicePageText,
+  .servicePageBullets {
+    font-size: 1rem;
   }
-  
-  .servicePageBullets{
-    font-size: 1.8vw;
-  }
-  
-  .relevantCompaniesTitle{
-    font-size: 3vw;
+
+  .servicePageBulletsTitle,
+  .relevantCompaniesTitle {
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .servicePageTitle{
-    font-size: 3.8vw;
-  }
-
-  .servicePageImage{
+  .servicePageImage {
     width: 40%;
     margin-left: 30%;
-    margin-bottom: 2%;
-  }
-  
-  .servicePageText {
-    font-size: 2.1vw;
-    width: 80%;
-    margin-left: 10%;
-    margin-bottom: 0;
-  }
-  
-  .servicePageBullets{
-    font-size: 2.1vw;
+    margin-bottom: 2rem;
   }
 
-  .servicePageBulletsTitle{
-    font-size: 3vw;
+  .servicePageText {
+    width: 80%;
+    margin: 1.5rem 10%;
   }
-  
-  .relevantCompaniesTitle{
-    font-size: 3vw;
-  }
-  /* org logos */
-  .talentHopeboundLogo{
-    width: 150px; 
-  }
-  
-  .coleagueLogo{
+
+ /* org logos */
+
+  .vChiefLogo,
+  .coleagueLogo {
     width: 150px;
+    margin: 1rem 0;
   }
+  
+  /* .coleagueLogo{
+    width: 150px;
+    margin-top: 3%;
+  } */
   
   .TFALogo{
     width: 150px;
@@ -155,8 +190,24 @@
     width: 90px;
   }
   
-  .vChiefLogo{
-    width: 130px;
+  /* .vChiefLogo{
+    width: 180px;
+  } */
+
+  .obranLogo{
+    width: 150px;
+  }
+
+  .aerdfLogo{
+    width: 180px;
+  }
+
+  .CanopyLogo{
+    width: 180px;
+  }
+
+  .catalystEdLogo{
+    width: 180px;
   }
 }
 
@@ -178,13 +229,31 @@
 }
 
 @media screen and (max-width: 600px) {
-  .servicePageImage{
+  .servicePageTitle {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .servicePageImage {
     width: 60%;
     margin-left: 20%;
-    margin-bottom: 2%;
   }
-  .companyATag{
-    display: flex;
-    justify-content: center;
+
+  .servicePageText,
+  .servicePageBullets {
+    width: 90%;
+    margin: 1rem 5%;
+    font-size: 0.9375rem;
+  }
+
+  .servicePageBulletsTitle,
+  .relevantCompaniesTitle {
+    font-size: 1.25rem;
+    padding: 0 1rem;
+  }
+
+  .vChiefLogo,
+  .coleagueLogo {
+    width: 120px;
   }
 }

@@ -1,58 +1,104 @@
 @import "../../styles/COLORS.css"; 
 
-.footerLogo{
-    width: 70%;
+/* Root element styles */
+.footer {
+  background-color: #f1f1ef;
+  padding: 2rem 1rem 5rem;
 }
 
-.footerLinkTitle,
-.footerServicesTitle{
-    font-size: 2.9vw;
-    font-weight: 600;
-    color: rgb(75, 75, 75);
+/* Logo styles */
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  margin-top: -1rem;
 }
 
-.footerLinkList{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.footerLogo {
+  width: 100%;
+  max-width: 450px;
+  aspect-ratio: 4 / 1;
+  object-fit: contain;
+  margin-left: 2rem;
 }
 
-.footerLink{
-    font-size: 24px;
-    font-weight: 400;
-    color: rgb(75, 75, 75);
+/* Link section styles */
+.linkSection {
+  margin-bottom: 2rem;
+  padding: 1rem;
 }
 
+/* Heading styles */
+.footerHeading {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: rgb(75, 75, 75);
+  margin-bottom: 1rem;
+}
 
+/* List styles */
+.footerLinkList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLinkList li {
+  margin-bottom: 0.5rem;
+}
+
+/* Link styles */
+.footerLink {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(75, 75, 75);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footerLink:hover {
+  color: rgb(45, 45, 45);
+}
+
+/* Responsive styles */
 @media screen and (max-width: 1200px) {
-    .footerLink{
-        font-size: 20px;
-    }
-}
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0;
+    width: 100%;
+  }
 
-@media screen and (max-width: 900px) {
-    .footerLogo{
-        width: 60%;
-    }
-    .footerLink{
-        font-size: 16px;
-    }
-    
+  .footerLogo {
+    width: 60%;
+    margin-left: 0;
+  }
+
+  .footerHeading {
+    font-size: 1.5rem;
+  }
+
+  .linkSection {
+    margin-top: 1rem;
+  }
+
+  .footerLink {
+    font-size: 0.875rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .footerLogo{
-        width: 80%;
-    }
+  .footer {
+    padding: 1rem 0.75rem 3rem;
+  }
 
-    .footerLinkTitle,
-    .footerServicesTitle{
-        font-size: 4vw;
-        margin-bottom: 1%;
-    }
+  .footerLogo {
+    width: 80%;
+  }
 
-    .footerLink{
-        font-size: 14px;
-    }
-    
+  .footerHeading {
+    font-size: 1.25rem;
+  }
 }

@@ -1,54 +1,66 @@
 @import "../../styles/COLORS.css";
 
-.serviceLink{
-    text-decoration: none;
-    color: black;
+.serviceLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
 }
 
-.card{
-    width: 100%;
-    background-color: var(--light-teal);
-    border-radius: 5px;
-    box-shadow: 3px 3px 3px black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.card {
+  background-color: var(--light-teal);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.card:hover{
-    background-color: var(--dark-teal);
-    transform: scale(1.05);
+.card:hover {
+  background-color: var(--dark-teal);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
 
-.cardTitle{
-    font-size: 2.4vw;
-    font-weight: 700;
-    text-align: center;
-    color: rgb(75, 75, 75);
-    /* text-shadow: .8px .8px rgb(48, 47, 47); */
-    padding: 2%;
-    margin: 0;
-    /* margin-top: 2%; */
+.cardContent {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(75, 75, 75);
+  margin: 0;
+  line-height: 1.2;
+}
 
+/* Tablet breakpoint */
 @media screen and (max-width: 900px) {
-    .card{
-        width: 100%;
-    }
-    .cardTitle{
-        font-size: 3.2vw;
-    }
+  .cardContent {
+    padding: 1.25rem;
+  }
+
+  .cardTitle {
+    font-size: 1.25rem;
+  }
 }
 
+/* Mobile breakpoint */
 @media screen and (max-width: 600px) {
-    .card {
-        width: 100%;
-    }
-    .cardTitle{
-        font-size: 7vw;
-    }
+  .cardContent {
+    padding: 1rem;
+  }
+
+  .cardTitle {
+    font-size: 1.125rem;
+  }
 }
 
-
-
+/* Larger screens */
+@media screen and (min-width: 1200px) {
+  .cardTitle {
+    font-size: 1.75rem;
+  }
+}

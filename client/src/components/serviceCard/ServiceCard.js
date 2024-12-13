@@ -1,24 +1,25 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import styles from "./ServiceCard.module.css";
+import PropTypes from 'prop-types';
 
-function ServiceCard(props) {
+function ServiceCard({ serviceLink, cardTitle }) {
   return (
-    <Link to ={props.serviceLink} className={styles.serviceLink}>
-      <div className={styles.card}>
-        {/* <div className={styles.iconContainer}>
-          <img className={styles.cardIcon} src={props.cardIcon} alt={props.cardTitle} />
-        </div> */}
-        <div className={styles.cardTitleContainer}>
-          <h2 className={styles.cardTitle}>{props.cardTitle}</h2>
+    <Link to={serviceLink} className={styles.serviceLink}>
+      <article className={styles.card}>
+        <div className={styles.cardContent}>
+          <h2 className={styles.cardTitle}>
+            {cardTitle}
+          </h2>
         </div>
-        {/* <div className={styles.cardTextContainer}>
-          <p className={styles.cardText}>{props.cardText}</p>
-        </div> */}
-      </div>
+      </article>
     </Link>
-    );
+  );
 }
 
-export default ServiceCard;
+ServiceCard.propTypes = {
+  serviceLink: PropTypes.string.isRequired,
+  cardTitle: PropTypes.string.isRequired,
+};
 
+export default ServiceCard;

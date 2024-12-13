@@ -3,7 +3,7 @@ import financialCompliance from "./financial-compliance.jpg";
 import innovation from "./innovation.jpg";
 import peopleManagement from "./people-management.jpg";
 import strategicPlanning from "./strategic-planning.jpg";
-import TalentCulture from "./talent-culture.jpg";
+import FractionalLeadership from "./fractional-executive-leadership-and-organizational-strategy.jpg";
 
 const serviceImages = {
   boardMgmt,
@@ -11,7 +11,7 @@ const serviceImages = {
   innovation,
   peopleManagement,
   strategicPlanning,
-  TalentCulture,
+  FractionalLeadership,
 };
 
 export default serviceImages;

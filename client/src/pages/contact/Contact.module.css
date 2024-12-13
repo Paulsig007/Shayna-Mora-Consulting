@@ -1,122 +1,193 @@
 @import "../../styles/COLORS.css";
 
+.contactPage {
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.contactContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+.contactHeader {
+  margin-bottom: 2rem;
+}
+
 .contactTitle {
-  margin-bottom: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
   color: rgb(75, 75, 75);
+  margin: 0 0 1rem;
 }
 
 .contactText {
-  margin-top: 0;
-  margin-bottom: 5%;
+  font-size: 1.25rem;
   color: rgb(75, 75, 75);
+  line-height: 1.4;
+  margin: 0;
 }
 
-form {
-  margin-left: 8%;
+/* Form Styles */
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.conLabel {
-  margin-top: 1%;
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formLabel {
+  font-size: 1.125rem;
   color: rgb(75, 75, 75);
-  font-size: 1.7vw;
+  font-weight: 500;
 }
 
-input[type="text"],
-input[type="email"],
-select {
-  font-size: 1.3vw;
-  width: 90%;
-  padding: 1%;
-  margin: 1%;
+.formInput,
+.formTextarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: rgb(75, 75, 75);
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
-  box-shadow: 3px 3px 5px #20201f;
+  background-color: white;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(32, 32, 31, 0.1);
 }
 
-textarea {
-  font-size: 1.3vw;
-  width: 90%;
-  height: 250px;
-  padding: 1%;
-  margin: 1%;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  box-shadow: 3px 3px 5px #20201f;
+.formInput:focus,
+.formTextarea:focus {
+  outline: none;
+  border-color: var(--dark-teal);
+  box-shadow: 0 2px 8px rgba(32, 32, 31, 0.15);
 }
 
-input[type="submit"] {
-  font-size: 2vw;
-  width: 90%;
-  font-weight: 700;
-  background-color: var(--dark-teal);
+.formTextarea {
+  min-height: 200px;
+  resize: vertical;
+}
+
+.submitButton {
+  font-size: 1.125rem;
+  font-weight: 600;
   color: white;
-  padding: 1%;
-  margin-left: 1%;
-  margin-top: 2%;
+  background-color: var(--dark-teal);
+  padding: 1rem 2rem;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  box-shadow: 3px 3px 5px #20201f;
-  margin-bottom: 70%;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(32, 32, 31, 0.1);
 }
 
-input[type="submit"]:hover {
-  transform: scale(1.02);
+.submitButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(32, 32, 31, 0.15);
 }
 
-@media screen and (min-width: 1600px) {
-  .contactTitle {
-    font-size: 50px;
-  }
-  .contactText {
-    font-size: 30px;
-  }
+.submitButton:active {
+  transform: translateY(0);
 }
 
-@media screen and (max-width: 1600px) {
-  .contactTitle {
-    font-size: 3.2vw;
-  }
-  .contactText {
-    font-size: 2vw;
-  }
-}
-
+/* Responsive Styles */
 @media screen and (max-width: 1200px) {
-  .contactTitle {
-    font-size: 3.6vw;
+  .contactContainer {
+    max-width: 600px;
   }
+
+  .contactTitle {
+    font-size: 2rem;
+  }
+
   .contactText {
-    font-size: 2.4vw;
+    font-size: 1.125rem;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .contactTitle {
-    font-size: 5vw;
+  .contactPage {
+    padding: 1.5rem;
   }
+
+  .contactTitle {
+    font-size: 1.75rem;
+  }
+
   .contactText {
-    font-size: 3.2vw;
+    font-size: 1rem;
+  }
+
+  .formLabel {
+    font-size: 1rem;
+  }
+
+  .submitButton {
+    font-size: 1rem;
+    padding: 0.875rem 1.75rem;
   }
 }
 
 @media screen and (max-width: 600px) {
+  .contactPage {
+    padding: 1rem;
+  }
+
+  .contactContainer {
+    max-width: 100%;
+  }
+
+  .contactHeader {
+    margin-bottom: 1.5rem;
+  }
+
   .contactTitle {
-    font-size: 6vw;
+    font-size: 1.5rem;
   }
+
+  .formInput,
+  .formTextarea {
+    padding: 0.625rem;
+    font-size: 0.9375rem;
+  }
+
+  .submitButton {
+    width: 100%;
+    padding: 0.75rem;
+  }
+}
+
+/* Larger screens */
+@media screen and (min-width: 1600px) {
+  .contactContainer {
+    max-width: 1000px;
+  }
+
+  .contactTitle {
+    font-size: 3rem;
+  }
+
   .contactText {
-    font-size: 4vw;
+    font-size: 1.5rem;
   }
-  .conLabel {
-    font-size: 4vw;
+
+  .formLabel {
+    font-size: 1.25rem;
   }
-  input[type="text"],
-  input[type="email"],
-  input[type="submit"],
-  textarea,
-  select {
-    font-size: 3.5vw;
+
+  .formInput,
+  .formTextarea {
+    font-size: 1.125rem;
+    padding: 1rem;
+  }
+
+  .submitButton {
+    font-size: 1.25rem;
+    padding: 1.25rem 2.5rem;
   }
 }

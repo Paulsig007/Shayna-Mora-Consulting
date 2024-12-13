@@ -1,96 +1,93 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
-import headshot from "../../assets/images/moraImages/Headshot.png";
+import headshot from "../../assets/images/moraImages/Headshot.webp";
 import styles from "./About.module.css";
 
 function About() {
   return (
-    <Grid container>
-      <Grid
-        item
-        xs={12}
-        sm={12}
-        md={12}
-        lg={6}
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          paddingTop: "1%",
-          paddingLeft: "1%",
-        }}
-      >
-        <img src={headshot} alt="Headshot" className={styles.headshot} />
-        <h1 className={styles.aboutTitle}>About Shayna</h1>
-      </Grid>
-      <Grid
-        item
-        xs={12}
-        sm={12}
-        md={12}
-        lg={6}
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          padding: "2% 2% 2% 0",
-        }}
-      >
-        <p className={styles.aboutText}>
-          With over 17 years of distinguished experience in education and
-          non-profit administration, Shayna Mora excels as a human capital
-          leader, blending sharp project management skills with an innate
-          determination to achieve. A strategic visionary, Shayna's extensive
-          expertise spans advising non-profits, education sectors, and startups
-          alike, encompassing strategic planning, process design, operational
-          excellence, and personnel leadership. Renowned for translating visions
-          into actionable operations, Shayna, a systems expert, has spearheaded
-          the enhancement and deployment of project tools for both internal and
-          external stakeholders, offering astute analysis and unparalleled
-          insight, making her an invaluable asset to any endeavor.
-          <br />
-          <br />
-          A partnership with Shayna translates to collaborating with a
-          professional who not only excels in strategic planning and operational
-          execution but also champions diversity, equity, and inclusion. Her
-          ability to drive growth, create streamlined processes, and nurture
-          collaboration establishes her as an invaluable asset for clients
-          seeking transformative outcomes. Shayna's expertise extends beyond the
-          technical realm; her track record in cultivating staff culture,
-          leading equity initiatives, and fostering leadership development
-          further solidifies her position as a strategic consultant capable of
-          driving positive change across numerous facets of an organization.
-          <br />
-          <br />
-          Shayna holds multiple advanced degrees from the University of Hawaii
-          and her academic journey is complemented by extensive global NGO
-          experience. Shayna has engaged in specialized coursework centered
-          around leadership and organizational transformation, enriching her
-          skills and insights to drive impactful change.
-        </p>
+    <main className={styles.aboutPage}>
+      <Grid container spacing={3}>
         <Grid
           item
           xs={12}
-          sm={12}
-          md={12}
-          lg={12}
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
+          lg={6}
         >
-          {/* <a className={styles.bottomResume} href={resume} download>
-            <img
-              src={resumeIcon}
-              alt="Resume Icon"
-              className={styles.bottomResumeIcon}
+          <div className={styles.profileSection}>
+            <img 
+              src={headshot} 
+              alt="Shayna Mora headshot" 
+              className={styles.headshot} 
             />
-          </a>
-          <p className={styles.bottomResumeText}>Download My CV</p> */}
+            <h1 className={styles.aboutTitle}>About Shayna Mora</h1>
+          </div>
+        </Grid>
+
+        {/* Bio Section */}
+        <Grid
+          item
+          xs={12}
+          lg={6}
+          className={styles.bioSection}
+        >
+          <article className={styles.aboutContent}>
+            <p className={styles.leadText}>
+              <strong>
+                I help mission-driven organizations and for-profit social enterprises thrive 
+                sustainably through efficient, strategic, and human-centered leadership.
+              </strong>
+            </p>
+
+            <p className={styles.aboutText}>
+              Welcome to Mora Consulting. I'm Shayna Mora, Principal Consultant, and I 
+              believe that organizations thrive when operational strength aligns with 
+              human-centered values. My work supports nonprofits, organizations, and 
+              purpose-driven for-profit enterprises that seek transformative growth, 
+              resilience, and positive culture shifts.
+            </p>
+
+            <p className={styles.aboutText}>
+              As a fractional Chief Operating Officer, Chief of Staff, and Chief People 
+              Officer, I work with clients across diverse sectors, guiding them through 
+              growth and transformation with a people-first approach that emphasizes 
+              sustainable impact. With nearly two decades of experience in nonprofit 
+              management, operations, strategy, and change management, I have dedicated 
+              my career to helping mission-driven organizations and impact-driven 
+              businesses turn their visions into reality.
+            </p>
+
+            <h2 className={styles.sectionTitle}>My Approach</h2>
+
+            <p className={styles.aboutText}>
+              As a fractional executive and strategist, I collaborate with socially-minded 
+              organizations, including purpose-driven enterprises, to build adaptive 
+              structures that drive sustainable growth and resilience while staying true 
+              to core values. Whether in change management, operational strategy, or 
+              leadership coaching, I focus on creating a culture where operational 
+              excellence and human-centered impact go hand in hand.
+            </p>
+
+            <p className={styles.aboutText}>
+              Drawing on nearly two decades of experience across a variety of sectors 
+              globally, I empower leaders to develop the skills and vision needed for 
+              meaningful results. With access to a broad network of consultants across 
+              sectors like philanthropy, impact-driven business, and marketing, I can 
+              assemble the ideal team to meet each client's unique needs. Together, 
+              we'll navigate transitions, strengthen communication, and ensure your 
+              operations align seamlessly with your mission.
+            </p>
+
+            <p className={styles.aboutText}>
+              Rooted in Hawai'i, I bring a deep respect for diversity, equity, and 
+              inclusion to every engagement, fostering spaces where all voices are 
+              valued and leaders feel inspired to make a difference. If you're ready 
+              to elevate your organization with a partner who understands socially 
+              conscious work, let's connect to build a resilient foundation for your 
+              mission.
+            </p>
+          </article>
         </Grid>
       </Grid>
-    </Grid>
+    </main>
   );
 }
 
