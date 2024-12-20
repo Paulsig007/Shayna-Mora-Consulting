@@ -19,7 +19,7 @@ function Home() {
             className={styles.textContainer}
           >
             <p className={styles.heroText}>
-            Empowering mission-driven organizations to create lasting strategic impact through efficient operations and human-centered leadership
+            Empowering mission-driven organizations to achieve strategic impact at the intersection of efficient operations and people-first leadership
             </p>
           </Grid>
         </Grid>
