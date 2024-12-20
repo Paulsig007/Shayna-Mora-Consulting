@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 1rem;
+  padding: 0rem 1rem;
   text-align: center;
 }
 
@@ -100,7 +100,7 @@
 
 @media screen and (max-width: 900px) {
   .profileSection {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 1rem 0rem;
   }
 
   .headshot {
@@ -135,7 +135,7 @@
   }
 
   .profileSection {
-    padding: 1rem 0.5rem;
+    padding: 1rem 0.5rem 0rem;
   }
 
   .headshot {
@@ -148,7 +148,7 @@
   }
 
   .bioSection {
-    padding: 1rem 0.5rem;
+    padding: 0rem 0.5rem;
   }
 
   .aboutContent {

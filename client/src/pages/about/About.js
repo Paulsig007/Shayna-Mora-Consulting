@@ -28,6 +28,7 @@ function About() {
           xs={12}
           lg={6}
           className={styles.bioSection}
+          sx={{ paddingTop: '0 !important' }}
         >
           <article className={styles.aboutContent}>
             <p className={styles.leadText}>

@@ -19,8 +19,7 @@ function Home() {
             className={styles.textContainer}
           >
             <p className={styles.heroText}>
-              Empowering mission-driven nonprofits and social impact organizations 
-              to thrive with operationally strategic, people-centered leadership
+            Empowering mission-driven organizations to create lasting strategic impact through efficient operations and human-centered leadership
             </p>
           </Grid>
         </Grid>

@@ -139,7 +139,11 @@
   }
 
   .servicesButton {
-    padding: 0.5rem !important;
+    padding: 0.2rem !important;
+  }
+
+  .menuLink {
+    font-size: .8rem;
   }
 }
 

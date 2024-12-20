@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Container from "@mui/material/Container";
+import { Helmet } from "react-helmet";
 
 // === Data ===
 // import serviceData from "../assets/serviceData";
@@ -23,6 +24,23 @@ import {
 function App() {
   return (
     <Router>
+      <Helmet>
+        <title>Mora Consulting - Professional Leadership & Strategy Solutions</title>
+        <meta
+          name="description"
+          content="Expert consulting services in fractional leadership, change management, and organizational strategy. Transforming businesses through comprehensive solutions and leadership development."
+        />
+        <meta 
+          property="og:title" 
+          content="Mora Consulting - Professional Leadership & Strategy Solutions" 
+        />
+        <meta 
+          property="og:description" 
+          content="Transform your organization with expert consulting in fractional leadership, change management, and strategic development." 
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="moraconsulting.co" />
+      </Helmet>  
       <Container maxWidth="false" className={styles.App} sx={{
         padding: "0",
       }}>
