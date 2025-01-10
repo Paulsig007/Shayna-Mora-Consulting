@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "./Contact.module.css";
-import Grid from "@mui/material/Grid";
 
 function Contact() {
   const form = useRef();
@@ -35,80 +34,63 @@ function Contact() {
   };
 
   return (
-    <Grid 
-      container 
-      spacing={2} 
-      sx={{ 
-        display: "flex", 
-        flexDirection: "column" 
-      }}
-    >
-      <Grid 
-        item 
-        sm={12} 
-        sx={{ 
-          display: "flex", 
-          flexDirection: "column", 
-          alignItems: "flex-start", 
-          justifyContent: "flex-start" 
-        }}
-      >
-        <h1 className={styles.contactTitle}>Contact Me</h1>
-      </Grid>
-      
-      <Grid item sm={12}>
-        <p className={styles.contactText}>
-          Reach out for more information on my services and how I can 
-          fractionally support your organization!
-        </p>
-      </Grid>
+    <main className={styles.contactPage}>
+      <div className={styles.contactContainer}>
+        <header className={styles.contactHeader}>
+          <h1 className={styles.contactTitle}>Contact Me</h1>
+          <p className={styles.contactText}>
+            Reach out for more information on my services and how I can 
+            fractionally support your organization!
+          </p>
+        </header>
 
-      <form ref={form} onSubmit={sendEmail}>
-        <Grid item sm={12}>
-          <label className={styles.conLabel}>Name</label>
-        </Grid>
-        <Grid item sm={12}>
-          <input 
-            type="text" 
-            name="from_name" 
-            placeholder="Name"
-            className={styles.formInput} 
-          />
-        </Grid>
+        <form 
+          ref={form} 
+          onSubmit={sendEmail}
+          className={styles.contactForm}
+        >
+          <div className={styles.formGroup}>
+            <label className={styles.formLabel}>Name</label>
+            <input
+              type="text"
+              name="from_name"
+              placeholder="Your name"
+              className={styles.formInput}
+              required
+            />
+          </div>
 
-        <Grid item sm={12}>
-          <label className={styles.conLabel}>Email</label>
-        </Grid>
-        <Grid item sm={12}>
-          <input 
-            type="email" 
-            name="from_email" 
-            placeholder="Email"
-            className={styles.formInput}
-          />
-        </Grid>
+          <div className={styles.formGroup}>
+            <label className={styles.formLabel}>Email</label>
+            <input
+              type="email"
+              name="from_email"
+              placeholder="Your email"
+              className={styles.formInput}
+              required
+            />
+          </div>
 
-        <Grid item sm={12}>
-          <label className={styles.conLabel}>Message</label>
-        </Grid>
-        <Grid item sm={12}>
-          <textarea 
-            id="contMessage" 
-            name="message"
-            className={styles.formTextarea}
-          />
-        </Grid>
+          <div className={styles.formGroup}>
+            <label className={styles.formLabel}>Message</label>
+            <textarea
+              name="message"
+              placeholder="Your message"
+              className={styles.formTextarea}
+              required
+            />
+          </div>
 
-        <Grid item sm={12}>
-          <input 
-            type="submit" 
-            value="Send"
+          <button 
+            type="submit"
             className={styles.submitButton}
             onClick={scrollToTop}
-          />
-        </Grid>
-      </form>
-    </Grid>
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </main>
   );
 }
 
